@@ -1,0 +1,124 @@
+/* body {font-family: Arial;} */
+.tabcontent {
+    display: grid;
+    margin:10px;
+    border-radius: 15px;
+    padding-left: 22px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    font-family: "Raleway", sans-serif;
+    background-color: #eeeeee;
+  }
+
+/* Style the tab content */
+  
+  img {
+    max-width: 100%;
+    -webkit-filter: drop-shadow(1px 1px 3px #a6a6a6);
+            filter: drop-shadow(1px 1px 3px #a6a6a6);
+  }
+  
+  /* ----- Product Section ----- */
+  .product {
+    display: grid;
+    grid-template-columns: 0.45fr 1fr; 
+    margin:2% 6% 2% 8%;
+    padding: 1.5em 1em 0.7em 1em;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ----- Photo Section ----- */
+  .product__photo {
+    position: relative;
+    height:9em;
+  }
+  
+  .photo-container {
+    position: absolute;
+    left: -2.5em;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 110%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .photo-main {
+    border-radius: 6px;
+    background-color: #2d4099;
+  }
+  
+ 
+  .photo-main img {
+    position: absolute;
+    left: -2.2em;
+    top: 1em;
+    max-width: 110%;
+    -webkit-filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+            filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+  }
+  
+
+  /* ----- Informations Section ----- */
+  .product__info {
+    padding: 0.8em 0;
+  }
+  
+  .title h1 {
+    margin-bottom: 0.1em;
+    color: #4c4c4c;
+    font-size: 1.3em;
+    font-weight: 900;
+  }
+  
+  
+  .description {
+    clear: left;
+    margin: 1em 1em 0.8em 0em;
+  }
+  
+  .description .student{
+      font-size: 20px;
+  }
+  
+  .description .student span{
+    font-size: 15px;
+}
+
+
+.section-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.section-title h5 {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #ccebff;
+  color: blue;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px; 
+}
+
+.section-title h3 {
+  margin: 15px 0 0 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.section-title h3 span {
+  color: #428bca;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 500;
+  color: #919191;
+}

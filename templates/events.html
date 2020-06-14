@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-142291179-2');
+    </script>
+    <title>BloomBox, E-Cell KJSCE</title>
+    <link rel="icon" type="image/ico" href="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="description"
+        content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
+    <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
+    <meta name="keywords"
+        content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="author" content="Team BloomBox">
+    <meta name="geo.region" content="IN">
+    <link rel="canonical" href="">
+    <!-- Template Main CSS File -->
+    <link href="{% static 'styles/css/navbarcss.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/events.css' %}" rel="stylesheet">
+    <!-- <link href="indexpage.css" rel="stylesheet"> -->
+    <!--CSS-->
+    <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <!--Upar waale ko comment kiya hai, kyuki footer pe apply ho rahe the iske styles
+      But, ab woh cards ka shape badal gaya hai thoda bulky hua. -->
+</head>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+    <div class="container">
+        <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+        <div class="logo d-block d-lg-none">
+            <a href="{% url 'index' %}">
+                <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid">
+            </a>
+        </div>
+        <nav class="nav-menu d-none d-lg-block">
+            <ul class="nav-inner">
+                <li>
+                    <a href="{% url 'index' %}">
+                        Home
+                        <i class="icofont-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'campus' %}">
+                        Campus Company
+                        <i class="icofont-company"></i>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'events' %}">
+                        Events
+                        <i class="icofont-brand-slideshare"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'partners' %}">
+                        Partners
+                        <i class="icofont-handshake-deal"></i>
+                    </a>
+                </li>
+                <!--  <li class="nav-logo"><a href="index.html"><img src="media/images/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a></li> -->
+                <li>
+                    <a href="{% url 'team' %}">
+                        Team
+                        <i class="icofont-people"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">
+                        About
+                        <i class="icofont-question"></i>
+                    </a>
+                </li>
+                <li class="drop-down">
+                    <a href="">
+                        Registration
+                        <i class="icofont-paper"></i>
+                    </a>
+                    <ul>
+                        <h5 class="dropdown-header">Active Events</h5>
+                        <li>
+                            <a href="#">Event 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Event 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Event 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Event 4</a>
+                        </li>
+                        <h5 class="dropdown-header">Recent Events</h5>
+                        <li>
+                            <a href="#">Event 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Event 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Event 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Event 4</a>
+                        </li>
+                        <li>
+                            <a href="#">Event 5</a>
+                        </li>
+                </li>
+            </ul>
+            </li>
+            <li>
+                <a href="#">
+                    Contact
+                    <i class="icofont-phone"></i>
+                </a>
+            </li>
+            </ul>
+        </nav>
+        <!-- .nav-menu -->
+    </div>
+</header>
+<!-- End Header -->
+
+<body>
+    <br>
+    <div class="section-title">
+        <h2>Events</h2>
+        <p>We conduct various Events all over the year, to hone talent.</p>
+    </div>
+    <div class="tab">
+        <center>
+            <button id="allButton" class="tablinks" onclick="eventType(event, 'All')">All</button>
+            <button class="tablinks" onclick="eventType(event, 'Hackathons')">Hackathons</button>
+            <button class="tablinks" onclick="eventType(event, 'Speaker/Panel Sessions')">
+                Speaker/Panel
+                Sessions
+            </button>
+            <button class="tablinks" onclick="eventType(event, 'Hands On Workshops')">Hands On Workshops</button>
+            <button class="tablinks" onclick="eventType(event, 'Fun Learning')">Fun Learning</button>
+        </center>
+    </div>
+    <div id="All" class="tabcontent active">
+        {% for event in events %}
+        <section class="product">
+            <div class="product__photo">
+                <div class="photo-container">
+                    <div class="photo-main">
+                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
+                    </div>
+                    {% if event.moreImages.all %}
+                    <div class="photo-album">
+                        <ul>
+                            {% for image in event.moreImages.all %}
+                            {% if forloop.counter0 == 0 %}
+                            <li onclick="moreImages(this)" class="active">
+                                {% else %}
+                            <li onclick="moreImages(this)">
+                                {% endif %}
+                                <img src="{{image.moreImages.url}}" alt="green apple">
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="title">
+                    <h1>{{event.title}}</h1>
+                </div>
+                <div class="description">
+                    <div class="desc-content">{{event.description}}</div>
+                    <br>
+                    <div class="date">{{event.date}}</div>
+                </div>
+                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                {% if event.is_active %}
+                <a href="registration/{{event.title}}">
+                    <button class="buy--btn">Register</button>
+                </a>
+                {% endif %}
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa{{event.title}}" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{event.title}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-left">
+                            <h4 class="text-center my-3">Details About the Event</h4>
+                            <p>
+                                {{event.details}}
+                            </p>
+                            <p>
+                                <b>Date of Event :- {{event.date}}</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+    <div id="Hackathons" class="tabcontent">
+        {% for event in events %}
+        {% if event.eventType == 'Hackathon' %}
+        <section class="product">
+            <div class="product__photo">
+                <div class="photo-container">
+                    <div class="photo-main">
+                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
+                    </div>
+                    {% if event.moreImages.all %}
+                    <div class="photo-album">
+                        <ul>
+                            {% for image in event.moreImages.all %}
+                            {% if forloop.counter0 == 0 %}
+                            <li onclick="moreImages(this)" class="active">
+                                {% else %}
+                            <li onclick="moreImages(this)">
+                                {% endif %}
+                                <img src="{{image.moreImages.url}}" alt="green apple">
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="title">
+                    <h1>{{event.title}}</h1>
+                </div>
+                <div class="description">
+                    <div class="desc-content">{{event.description}}</div>
+                    <br>
+                    <div class="date">{{event.date}}</div>
+                </div>
+                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                {% if event.is_active %}
+                <a href="registration/{{event.title}}">
+                    <button class="buy--btn">Register</button>
+                </a>
+                {% endif %}
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa{{event.title}}" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{event.title}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-left">
+                            <h4 class="text-center my-3">Details About the Event</h4>
+                            <p>
+                                {{event.details}}
+                            </p>
+                            <p>
+                                <b>Date of Event :- {{event.date}}</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div id="Speaker/Panel Sessions" class="tabcontent">
+        {% for event in events %}
+        {% if event.eventType == 'Panel Session' %}
+        <section class="product">
+            <div class="product__photo">
+                <div class="photo-container">
+                    <div class="photo-main">
+                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
+                    </div>
+                    {% if event.moreImages.all %}
+                    <div class="photo-album">
+                        <ul>
+                            {% for image in event.moreImages.all %}
+                            {% if forloop.counter0 == 0 %}
+                            <li onclick="moreImages(this)" class="active">
+                                {% else %}
+                            <li onclick="moreImages(this)">
+                                {% endif %}
+                                <img src="{{image.moreImages.url}}" alt="green apple">
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="title">
+                    <h1>{{event.title}}</h1>
+                </div>
+                <div class="description">
+                    <div class="desc-content">{{event.description}}</div>
+                    <br>
+                    <div class="date">{{event.date}}</div>
+                </div>
+                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                {% if event.is_active %}
+                <a href="registration/{{event.title}}">
+                    <button class="buy--btn">Register</button>
+                </a>
+                {% endif %}
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa{{event.title}}" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{event.title}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-left">
+                            <h4 class="text-center my-3">Details About the Event</h4>
+                            <p>
+                                {{event.details}}
+                            </p>
+                            <p>
+                                <b>Date of Event :- {{event.date}}</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div id="Hands On Workshops" class="tabcontent">
+        {% for event in events %}
+        {% if event.eventType == 'Workshop' %}
+        <section class="product">
+            <div class="product__photo">
+                <div class="photo-container">
+                    <div class="photo-main">
+                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
+                    </div>
+                    {% if event.moreImages.all %}
+                    <div class="photo-album">
+                        <ul>
+                            {% for image in event.moreImages.all %}
+                            {% if forloop.counter0 == 0 %}
+                            <li onclick="moreImages(this)" class="active">
+                                {% else %}
+                            <li onclick="moreImages(this)">
+                                {% endif %}
+                                <img src="{{image.moreImages.url}}" alt="green apple">
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="title">
+                    <h1>{{event.title}}</h1>
+                </div>
+                <div class="description">
+                    <div class="desc-content">{{event.description}}</div>
+                    <br>
+                    <div class="date">{{event.date}}</div>
+                </div>
+                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                {% if event.is_active %}
+                <a href="registration/{{event.title}}">
+                    <button class="buy--btn">Register</button>
+                </a>
+                {% endif %}
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa{{event.title}}" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{event.title}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-left">
+                            <h4 class="text-center my-3">Details About the Event</h4>
+                            <p>
+                                {{event.details}}
+                            </p>
+                            <p>
+                                <b>Date of Event :- {{event.date}}</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div id="Fun Learning" class="tabcontent">
+        {% for event in events %}
+        {% if event.eventType == 'FunLearning' %}
+        <section class="product">
+            <div class="product__photo">
+                <div class="photo-container">
+                    <div class="photo-main">
+                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
+                    </div>
+                    {% if event.moreImages.all %}
+                    <div class="photo-album">
+                        <ul>
+                            {% for image in event.moreImages.all %}
+                            {% if forloop.counter0 == 0 %}
+                            <li onclick="moreImages(this)" class="active">
+                                {% else %}
+                            <li onclick="moreImages(this)">
+                                {% endif %}
+                                <img src="{{image.moreImages.url}}" alt="green apple">
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="title">
+                    <h1>{{event.title}}</h1>
+                </div>
+                <div class="description">
+                    <div class="desc-content">{{event.description}}</div>
+                    <br>
+                    <div class="date">{{event.date}}</div>
+                </div>
+                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                {% if event.is_active %}
+                <a href="registration/{{event.title}}">
+                    <button class="buy--btn">Register</button>
+                </a>
+                {% endif %}
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa{{event.title}}" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{event.title}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-left">
+                            <h4 class="text-center my-3">Details About the Event</h4>
+                            <p>
+                                {{event.details}}
+                            </p>
+                            <p>
+                                <b>Date of Event :- {{event.date}}</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="{% url 'index' %}">Home</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="{% url 'campus' %}">Campus Company</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="{% url 'events' %}">Events</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="{% url 'partners' %}">Partners</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="{% url 'team' %}">Team</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="{% url 'about' %}">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    KJ Somaiya College of Engineering
+                                    <br>
+                                    Vidyanagar, Vidyavihar
+                                    <br>
+                                    Mumbai, India
+                                    <br>
+                                    <br>
+                                    <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
+                                    <strong>Email:</strong>
+                                    bloombox.kjsce@somaiya.edu
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-info">
+                                <h3>Follow Us</h3>
+                                <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p> -->
+                                <div class="social-links mt-3">
+                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter">
+                                        <i class="bx bxl-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook">
+                                        <i class="bx bxl-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram">
+                                        <i class="bx bxl-instagram"></i>
+                                    </a>
+                                    <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin">
+                                        <i class="bx bxl-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="credits">
+                Designed by
+                <a href="#">Bloombox, E-Cell KJSCE</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Preloader -->
+    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+    <!--Check if site works without this-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/validate.js' %}"></script>
+    <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+    <script src="{% static 'scripts/basic/aos.js' %}"></script>
+    <!-- Template Main JS File -->
+    <script src="{% static 'scripts/script/main-index.js' %}"></script>
+    <script src="{% static 'scripts/script/events.js' %}"></script>
+</body>
+
+</html>

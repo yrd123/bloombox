@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-142291179-2');
+    </script>
+    <title>BloomBox, E-Cell KJSCE</title>
+    <link rel="icon" type="image/ico" href="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description"
+        content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
+    <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
+    <meta name="keywords"
+        content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="author" content="Team BloomBox">
+    <meta name="geo.region" content="IN">
+    <link rel="canonical" href="">
+    <!-- Template Main CSS File -->
+    <link href="{% static 'styles/css/indexpage.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/teamcss.css' %}" rel="stylesheet">
+    <!--CSS-->
+    <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
+</head>
+
+<body onload="preloader();">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container">
+            <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+            <div class="logo d-block d-lg-none">
+                <a href="{% url 'index' %}">
+                    <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid">
+                </a>
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul class="nav-inner">
+                    <li>
+                        <a href="{% url 'index' %}">Home
+                            <i class="icofont-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'campus' %}">Campus Company
+                            <i class="icofont-company"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'events' %}">Events
+                            <i class="icofont-brand-slideshare"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Partners
+                            <i class="icofont-handshake-deal"></i>
+                        </a>
+                    </li>
+                    <!--  <li class="nav-logo"><a href="index.html"><img src="media/images/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a></li> -->
+                    <li class="active">
+                        <a href="{% url 'team' %}">Team
+                            <i class="icofont-people"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">About
+                            <i class="icofont-question"></i>
+                        </a>
+                    </li>
+                    <li class="drop-down">
+                        <a href="">Registration
+                            <i class="icofont-paper"></i>
+                        </a>
+                        <ul>
+                            <h5 class="dropdown-header">Active Events</h5>
+                            <li>
+                                <a href="#">Event 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 4</a>
+                            </li>
+                            <h5 class="dropdown-header">Recent Events</h5>
+                            <li>
+                                <a href="#">Event 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 5</a>
+                            </li>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#">Contact
+                        <i class="icofont-phone"></i>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+    <br>
+    <br>
+    <div class="section-title">
+        <h2>Teams</h2>
+        <p>Our Team Members Who Make The Council What It Is</p>
+    </div>
+    <!---ldhaoflelfhsd;fsdh;fsdhfa;shf;dfh-->
+    <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tab1">2020-21</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab2">2019-20</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab3">2018-19</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab4">2017-18</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab5">2016-17</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab6">2015-16</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab7">2014-15</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab8">2013-14</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab9">2012-13</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!--2020-21 -->
+            <div id="tab1" class="container tab-pane active">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Team members -->
+                            {% for member in team20 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="mainflip">
+                                        <div class="frontside">
+                                            <div class="card">
+                                                <div class="card-body text-center">
+                                                    {% if member.image %}
+                                                    <p>
+                                                        <img class=" img-fluid"
+                                                            src="{{member.image.url}}"
+                                                            alt="card image">
+                                                    </p>
+                                                    {% endif %}
+                                                    <h4 class="card-title">{{member.name}}</h4>
+                                                    <p class="card-text">{{member.post}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="backside">
+                                            <div class="card">
+                                                <div class="card-body text-center mt-4">
+                                                    <h4 class="card-title">{{member.name}}</h4>
+                                                    <p class="card-text">{{member.post}}</p>
+                                                    <div class="card-social">
+                                                        <a href="{{member.email}}">
+                                                            <i class="icofont-email icofont-2x"></i>
+                                                        </a>
+                                                        <a href="{{member.linkedin}}">
+                                                            <i class="icofont-linkedin icofont-2x"></i>
+                                                        </a>
+                                                        <a href="{{member.facebook}}">
+                                                            <i class="icofont-facebook icofont-2x"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--End Team Member-->
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2019-20-->
+            <div id="tab2" class="container tab-pane">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Team members -->
+                            {% for member in team19 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="mainflip">
+                                        <div class="frontside">
+                                            <div class="card">
+                                                <div class="card-body text-center">
+                                                    {% if member.image %}
+                                                    <p>
+                                                        <img class=" img-fluid"
+                                                            src="{{member.image.url}}"
+                                                            alt="card image">
+                                                    </p>
+                                                    {% endif %}
+                                                    <h4 class="card-title">{{member.name}}</h4>
+                                                    <p class="card-text">{{member.post}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="backside">
+                                            <div class="card">
+                                                <div class="card-body text-center mt-4">
+                                                    <h4 class="card-title">{{member.name}}</h4>
+                                                    <p class="card-text">{{member.post}}</p>
+                                                    <div class="card-social">
+                                                        <a href="{{member.email}}">
+                                                            <i class="icofont-email icofont-2x"></i>
+                                                        </a>
+                                                        <a href="{{member.linkedin}}">
+                                                            <i class="icofont-linkedin icofont-2x"></i>
+                                                        </a>
+                                                        <a href="{{member.facebook}}">
+                                                            <i class="icofont-facebook icofont-2x"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--End Team Member-->
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2018-19-->
+            <div id="tab3" class="container tab-pane">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Team members -->
+                            {% for member in team18 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="mainflip">
+                                        <div class="frontside">
+                                            <div class="card">
+                                                <div class="card-body text-center">
+                                                    {% if member.image %}
+                                                    <p>
+                                                        <img class=" img-fluid"
+                                                            src="{{member.image.url}}"
+                                                            alt="card image">
+                                                    </p>
+                                                    {% endif %}
+                                                    <h4 class="card-title">{{member.name}}</h4>
+                                                    <p class="card-text">{{member.post}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="backside">
+                                            <div class="card">
+                                                <div class="card-body text-center mt-4">
+                                                    <h4 class="card-title">{{member.name}}</h4>
+                                                    <p class="card-text">{{member.post}}</p>
+                                                    <div class="card-social">
+                                                        <a href="{{member.email}}">
+                                                            <i class="icofont-email icofont-2x"></i>
+                                                        </a>
+                                                        <a href="{{member.linkedin}}">
+                                                            <i class="icofont-linkedin icofont-2x"></i>
+                                                        </a>
+                                                        <a href="{{member.facebook}}">
+                                                            <i class="icofont-facebook icofont-2x"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--End Team Member-->
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2017-18-->
+            <div id="tab4" class="container tab-pane fade">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!--No Image Code-->
+                            {% for member in team17 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="noImage">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">{{member.name}}</h4>
+                                            <p class="card-text">{{member.post}}</p>
+                                            <div class="card-social">
+                                                <a href="{{member.email}}">
+                                                    <i class="icofont-email icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.linkedin}}">
+                                                    <i class="icofont-linkedin icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.facebook}}">
+                                                    <i class="icofont-facebook icofont-2x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--No Image Code Ends-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2016-17-->
+            <div id="tab5" class="container tab-pane fade">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!--No Image Code-->
+                            {% for member in team16 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="noImage">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">{{member.name}}</h4>
+                                            <p class="card-text">{{member.post}}</p>
+                                            <div class="card-social">
+                                                <a href="{{member.email}}">
+                                                    <i class="icofont-email icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.linkedin}}">
+                                                    <i class="icofont-linkedin icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.facebook}}">
+                                                    <i class="icofont-facebook icofont-2x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--No Image Code Ends-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2015-16-->
+            <div id="tab6" class="container tab-pane fade">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!--No Image Code-->
+                            {% for member in team15 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="noImage">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">{{member.name}}</h4>
+                                            <p class="card-text">{{member.post}}</p>
+                                            <div class="card-social">
+                                                <a href="{{member.email}}">
+                                                    <i class="icofont-email icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.linkedin}}">
+                                                    <i class="icofont-linkedin icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.facebook}}">
+                                                    <i class="icofont-facebook icofont-2x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--No Image Code Ends-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2014-15-->
+            <div id="tab7" class="container tab-pane fade">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!--No Image Code-->
+                            {% for member in team14 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="noImage">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">{{member.name}}</h4>
+                                            <p class="card-text">{{member.post}}</p>
+                                            <div class="card-social">
+                                                <a href="{{member.email}}">
+                                                    <i class="icofont-email icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.linkedin}}">
+                                                    <i class="icofont-linkedin icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.facebook}}">
+                                                    <i class="icofont-facebook icofont-2x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--No Image Code Ends-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2013-14-->
+            <div id="tab8" class="container tab-pane fade">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!--No Image Code-->
+                            {% for member in team13 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="noImage">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">{{member.name}}</h4>
+                                            <p class="card-text">{{member.post}}</p>
+                                            <div class="card-social">
+                                                <a href="{{member.email}}">
+                                                    <i class="icofont-email icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.linkedin}}">
+                                                    <i class="icofont-linkedin icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.facebook}}">
+                                                    <i class="icofont-facebook icofont-2x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--No Image Code Ends-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--2012-13-->
+            <div id="tab9" class="container tab-pane fade">
+                <br>
+                <section id="team" class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <!--No Image Code-->
+                            {% for member in team12 %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="noImage">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">{{member.name}}</h4>
+                                            <p class="card-text">{{member.post}}</p>
+                                            <div class="card-social">
+                                                <a href="{{member.email}}">
+                                                    <i class="icofont-email icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.linkedin}}">
+                                                    <i class="icofont-linkedin icofont-2x"></i>
+                                                </a>
+                                                <a href="{{member.facebook}}">
+                                                    <i class="icofont-facebook icofont-2x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--No Image Code Ends-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Campus Company</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Events</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Partners</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Team</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our campComp</h4>
+                    <ul>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                    </ul>
+                  </div> -->
+                            <div class="col-lg-4 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    KJ Somaiya College of Engineering
+                                    <br>
+                                    Vidyanagar, Vidyavihar
+                                    <br>
+                                    Mumbai, India
+                                    <br>
+                                    <br>
+                                    <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
+                                    <strong>Email:</strong> bloombox.kjsce@somaiya.edu
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-info">
+                                <h3>Follow Us</h3>
+                                <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p> -->
+                                <div class="social-links mt-3">
+                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter">
+                                        <i class="bx bxl-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook">
+                                        <i class="bx bxl-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram">
+                                        <i class="bx bxl-instagram"></i>
+                                    </a>
+                                    <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin">
+                                        <i class="bx bxl-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="credits">
+                Designed by
+                <a href="#">Bloombox, E-Cell KJSCE</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Preloader -->
+    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/validate.js' %}"></script>
+    <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+    <script src="{% static 'scripts/basic/aos.js' %}"></script>
+    <!-- Template Main JS File -->
+    <script src="{% static 'scripts/script/main-index.js' %}"></script>
+</body>
+
+</html>

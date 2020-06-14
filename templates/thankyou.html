@@ -1,0 +1,6 @@
+<br><p>Thanks {{name}} for registering for {{registeredEvent}}</p><br>
+<b>there are other events active tooo</b><br>
+{% for event in events %}
+<p>{{event.title}}</p>
+<a href="/registration/{{event.title}}"><b>Register</b></a><br>
+{% endfor %}

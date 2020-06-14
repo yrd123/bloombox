@@ -1,0 +1,45 @@
+<form id="form" method="POST" action="/registration/{{event.title}}">
+    {% csrf_token %}
+    Title: {{event.title}}
+    <br>
+    {% if event.eventType == 'Hackathon' %}
+
+    Group Leader Name:
+    <input id="leaderName" name="leaderName" type="text">
+    <br>
+    Group Leader Email:
+    <input id="leaderEmail" name="leaderEmail" type="text">
+    <br>
+    Group Leader Contact:
+    <input id="leaderContact" name="leaderContact" type="number">
+    <br>
+    College:
+    <input id="Hcollege" name="Hcollege" type="text">
+    <br>
+    No of team members:
+    <input id="noOfMembers" name="noOfMembers" type="number">
+    <br>
+    Name of team members:
+    <input id="nameOfMembers" name="nameOfMembers" type="text">
+    <br>
+    {% else %}
+
+    Name:
+    <input id="name" name="name" type="text">
+    <br>
+    Email:
+    <input id="email" name="email" type="text">
+    <br>
+    Contact:
+    <input id="contact" name="contact" type="number">
+    <br>
+    College:
+    <input id="college" name="college" type="text">
+    <br>
+    branch:
+    <input id="branch" name="branch" type="text">
+    <br>
+    {% endif %}
+    <button type="submit">register</button>
+    <br>
+</form>
