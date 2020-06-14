@@ -44,6 +44,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
     <!--Upar waale ko comment kiya hai, kyuki footer pe apply ho rahe the iske styles
       But, ab woh cards ka shape badal gaya hai thoda bulky hua. -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+
+    </style>
 </head>
 <!-- ======= Header ======= -->
 <header id="header" class="d-flex align-items-center">
@@ -147,7 +153,7 @@
 <body>
     <br>
     <div class="section-title">
-        <h2>Events</h2>
+        <h2>Events</h2><br><br>
         <p>We conduct various Events all over the year, to hone talent.</p>
     </div>
     <div class="tab">
@@ -196,7 +202,8 @@
                     <br>
                     <div class="date">{{event.date}}</div>
                 </div>
-                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                <button type="button" class="buy--btn" data-toggle="modal"
+                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 {% if event.is_active %}
                 <a href="registration/{{event.title}}">
@@ -205,8 +212,36 @@
                 {% endif %}
             </div>
             <!-- Modal -->
-            
-            
+            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #22208b;color: white;">
+                            <b>
+                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
+                            </b>
+                        </div>
+                        <div style="font-size: 20px;" class="modal-body">
+                            <center><b>
+                                    <h3 style="font-weight: 600;">Details</h3>
+                                </b>
+                                <p>{{event.details}}</p><br>
+                                <b>
+                                    <h3 style="font-weight: 600;">Date</h3>
+                                </b>
+                                <p>{{event.date}}</p>
+                            </center>
+                        </div>
+                        <div class="modal-footer" style="background-color:#22208b;">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
         </section>
         {% endfor %}
     </div>
@@ -245,7 +280,8 @@
                     <br>
                     <div class="date">{{event.date}}</div>
                 </div>
-                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                <button type="button" class="buy--btn" data-toggle="modal"
+                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 {% if event.is_active %}
                 <a href="registration/{{event.title}}">
@@ -254,7 +290,35 @@
                 {% endif %}
             </div>
             <!-- Modal -->
-            
+            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #22208b;color: white;">
+                            <b>
+                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
+                            </b>
+
+                        </div>
+                        <div style="font-size: 20px;" class="modal-body">
+                            <center><b>
+                                    <h3 style="font-weight: 600;">Details</h3>
+                                </b>
+                                <p>{{event.details}}</p><br>
+                                <b>
+                                    <h3 style="font-weight: 600;">Date</h3>
+                                </b>
+                                <p>{{event.date}}</p>
+                            </center>
+                        </div>
+                        <div class="modal-footer" style="background-color:#22208b;">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
         {% endif %}
         {% endfor %}
@@ -294,7 +358,8 @@
                     <br>
                     <div class="date">{{event.date}}</div>
                 </div>
-                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                <button type="button" class="buy--btn" data-toggle="modal"
+                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 {% if event.is_active %}
                 <a href="registration/{{event.title}}">
@@ -303,7 +368,34 @@
                 {% endif %}
             </div>
             <!-- Modal -->
-            
+            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #22208b;color: white;">
+                            <b>
+                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
+                            </b>
+                        </div>
+                        <div style="font-size: 20px;" class="modal-body">
+                            <center><b>
+                                    <h3 style="font-weight: 600;">Details</h3>
+                                </b>
+                                <p>{{event.details}}</p><br>
+                                <b>
+                                    <h3 style="font-weight: 600;">Date</h3>
+                                </b>
+                                <p>{{event.date}}</p>
+                            </center>
+                        </div>
+                        <div class="modal-footer" style="background-color:#22208b;">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
         {% endif %}
         {% endfor %}
@@ -343,7 +435,8 @@
                     <br>
                     <div class="date">{{event.date}}</div>
                 </div>
-                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                <button type="button" class="buy--btn" data-toggle="modal"
+                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 {% if event.is_active %}
                 <a href="registration/{{event.title}}">
@@ -352,7 +445,35 @@
                 {% endif %}
             </div>
             <!-- Modal -->
-           </section> 
+            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #22208b;color: white;">
+                            <b>
+                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
+                            </b>
+                        </div>
+                        <div style="font-size: 20px;" class="modal-body">
+                            <center><b>
+                                    <h3 style="font-weight: 600;">Details</h3>
+                                </b>
+                                <p>{{event.details}}</p><br>
+                                <b>
+                                    <h3 style="font-weight: 600;">Date</h3>
+                                </b>
+                                <p>{{event.date}}</p>
+                            </center>
+                        </div>
+                        <div class="modal-footer" style="background-color:#22208b;">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         {% endif %}
         {% endfor %}
     </div>
@@ -391,7 +512,8 @@
                     <br>
                     <div class="date">{{event.date}}</div>
                 </div>
-                <button class="buy--btn" data-toggle="modal" data-target="#exampleModa{{event.title}}">Know More</button>
+                <button type="button" class="buy--btn" data-toggle="modal"
+                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 {% if event.is_active %}
                 <a href="registration/{{event.title}}">
@@ -400,7 +522,34 @@
                 {% endif %}
             </div>
             <!-- Modal -->
-            
+            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #22208b;color: white;">
+                            <b>
+                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
+                            </b>
+                        </div>
+                        <div style="font-size: 20px;" class="modal-body">
+                            <center><b>
+                                    <h3 style="font-weight: 600;">Details</h3>
+                                </b>
+                                <p>{{event.details}}</p><br>
+                                <b>
+                                    <h3 style="font-weight: 600;">Date</h3>
+                                </b>
+                                <p>{{event.date}}</p>
+                            </center>
+                        </div>
+                        <div class="modal-footer" style="background-color:#22208b;">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
         {% endif %}
         {% endfor %}
