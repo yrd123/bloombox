@@ -167,6 +167,55 @@
         </section>
         {% endfor %}
 
+        {% for company in companies %}
+        <section class="product">
+            <div class="product__photo">
+                <div class="photo-container">
+                    <div class="photo-main">
+                        <img class="imageTop" src="{{ company.image.url }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="title">
+                    <h1>{{ company.name }}</h1>
+                </div>
+                <div class="description">
+                    <div class="desc-content">{{company.description}}</div>
+
+                    <div class="student">
+                        <h5>Student:</h5>
+                        <span>{{company.students}}</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endfor %}
+        {% for company in companies %}
+        <section class="product">
+            <div class="product__photo">
+                <div class="photo-container">
+                    <div class="photo-main">
+                        <img class="imageTop" src="{{ company.image.url }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="title">
+                    <h1>{{ company.name }}</h1>
+                </div>
+                <div class="description">
+                    <div class="desc-content">{{company.description}}</div>
+
+                    <div class="student">
+                        <h5>Student:</h5>
+                        <span>{{company.students}}</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endfor %}
+
     </div>
     <!-- ======= Footer ======= -->
     <footer id="footer">

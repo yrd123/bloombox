@@ -187,12 +187,12 @@ body {font-family: Arial;}
   @media only screen and (max-width: 450px) {
     .product {
       grid-template-columns: 1fr;
-      margin:0px;
+      margin:10px;
       min-width: auto;
     }
 
     .tabcontent{
-        margin:5px 10px 5px 10px;
+        margin:5px 40px 5px 40px;
         grid-template-columns: 1fr;
     }
 
