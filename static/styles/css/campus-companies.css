@@ -120,4 +120,29 @@
     font-size: 15px;
 }
 
+@media only screen and (max-width: 450px) {
+  .product {
+    grid-template-columns: 1fr;
+    margin:0px;
+    min-width: auto;
+  }
 
+  .tabcontent{
+      margin:5px 10px 5px 10px;
+      grid-template-columns: 1fr;
+      padding-left: 0px;
+  }
+
+  .photo-container{
+      left: 0px;
+      width: 100%;
+  }
+
+  .photo-main img{
+      left:0;
+      right: 0;
+      margin: auto;
+  }
+
+
+}

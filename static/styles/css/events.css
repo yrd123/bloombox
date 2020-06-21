@@ -76,7 +76,6 @@ body {font-family: Arial;}
     color:black;
     margin:1.5% 2% 1.5% 8%;
     padding: 2em 1.5em;
-    min-width: 600px;
     background-color:white;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
@@ -185,4 +184,35 @@ body {font-family: Arial;}
             transform: scale(0.97);
   }
 
- 
+  @media only screen and (max-width: 450px) {
+    .product {
+      grid-template-columns: 1fr;
+      margin:0px;
+      min-width: auto;
+    }
+
+    .tabcontent{
+        margin:5px 10px 5px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .photo-container{
+        left: 0px;
+        width: 100%;
+    }
+
+    .photo-main img{
+        left:0;
+        right: 0;
+        margin: auto;
+    }
+
+   /* .photo-album li{
+        height:80%;
+    }
+
+    li>img{
+        height:80%;
+    }
+*/
+  }
