@@ -33,11 +33,13 @@ img {
   color:black;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
+  min-width: 300px; /* these two can be adjusted if boxes are getting generated of different sizes */                
+  min-height: 250px;
 }
 
 .event-photo{
     position:relative;
-    height:19em;
+    height:16.5em;
     width:246px;  
 }
 

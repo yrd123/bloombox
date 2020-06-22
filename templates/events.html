@@ -178,7 +178,7 @@
                                                 <div class="event-photo-main">
                                                     <img class="imageTop"
                                                         src="{{event.moreImages.all.0.moreImages.url}}"
-                                                        alt="green apple slice">
+                                                        alt="">
                                                 </div>
                                                 {% if event.moreImages.all %}
                                                 <div class="event-photo-album">
@@ -205,15 +205,15 @@
                                             </div>
                                             <div class="description">
                                                 <div class="desc-content">
-                                                    {{event.description}}
+                                                    {{event.description}} abcdefghijklmnopqrstuvwxyz
+                                                    abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz hello my name is param shendekar, and here i am testing about what is happening here. whats the issue?
                                                 </div>
                                                 <div class="date">{{event.date}}</div>
                                             </div>
                                             <a href="#">
                                                 <button type="button" class="btn btn-seemore " data-toggle="modal"
                                                     data-target="div[name='exampleModal{{event.title}}']">
-                                                    Know
-                                                    More
+                                                    Know More
                                                 </button>
                                             </a>
                                             {% if event.is_active %}

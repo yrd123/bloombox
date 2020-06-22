@@ -52,7 +52,7 @@
   .product {
     display: grid;
     grid-template-columns: 0.45fr 1fr; 
-    margin:2% 6% 2% 8%;
+    margin:2% 6% 2% 12%;
     padding: 1.5em 1em 0.7em 1em;
     min-width: 300px;
     background-color: white;
@@ -63,7 +63,7 @@
   /* ----- Photo Section ----- */
   .product__photo {
     position: relative;
-    height:9em;
+    height:7.5em;
   }
   
   .photo-container {
@@ -89,7 +89,7 @@
     top: 1em;
     max-width: 110%;
     -webkit-filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
-            filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+    filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
   }
   
 
@@ -141,6 +141,7 @@
   .photo-main img{
       left:0;
       right: 0;
+      top: 0;
       margin: auto;
   }
 

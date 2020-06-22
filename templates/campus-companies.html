@@ -25,11 +25,7 @@
     <meta name="author" content="Team BloomBox">
     <meta name="geo.region" content="IN">
     <link rel="canonical" href="">
-    <!-- Template Main CSS File -->
-    <link href="{% static 'styles/css/navbarcss.css' %}" rel="stylesheet">
-    <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
-    <link href="{% static 'styles/css/campus-companies.css' %}" rel="stylesheet">
-    <!-- <link href="indexpage.css" rel="stylesheet"> -->
+    
     <!--CSS-->
     <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
     <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
@@ -37,8 +33,16 @@
     <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
     <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'styles/css/navbarcss.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/cc-param.css' %}" rel="stylesheet">
+    <!-- <link href="indexpage.css" rel="stylesheet"> -->
+
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
     <!--Upar waale ko comment kiya hai, kyuki footer pe apply ho rahe the iske styles
       But, ab woh cards ka shape badal gaya hai thoda bulky hua. -->
@@ -141,82 +145,45 @@
         <h2>Campus Companies</h2>
         <p>We help business minds at our campus, turn their ideas into reality</p>
     </div>
-    <div id="All" class="tabcontent active">
-        {% for company in companies %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{ company.image.url }}" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{ company.name }}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{company.description}}</div>
 
-                    <div class="student">
-                        <h5>Student:</h5>
-                        <span>{{company.students}}</span>
+    <div class='container-fluid companies'>
+        <div class='row'>
+            {% for company in companies %}
+            <!--Company Card-->
+            <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
+                <div class='event-content'>
+                    <div class='row'>
+                        <div class='col-md-4 col-lg-3'>
+                            <div class='event-photo'>
+                                <div class='event-photo-container'>
+                                    <div class='event-photo-main'>
+                                        <img class="imageTop" src="{{ company.image.url }}" alt="green apple slice">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class='col-lg-9 col-md-8'>
+                            <div class='event-info'>
+                                <div class='event-title'>
+                                    <h1>{{ company.name }}</h1>
+                                </div>
+                                <div class="description">
+                                    <div class="desc-content">{{company.description}}</div>
+                                    <br>
+                                    <div class="student"><b>Students:</b><br>
+                                    <span>{{company.students}}</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        {% endfor %}
+            <!--Company Card Ends-->
+            {% endfor %}
+        </div>
+      </div>
 
-        {% for company in companies %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{ company.image.url }}" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{ company.name }}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{company.description}}</div>
-
-                    <div class="student">
-                        <h5>Student:</h5>
-                        <span>{{company.students}}</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {% endfor %}
-        {% for company in companies %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{ company.image.url }}" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{ company.name }}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{company.description}}</div>
-
-                    <div class="student">
-                        <h5>Student:</h5>
-                        <span>{{company.students}}</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {% endfor %}
-
-    </div>
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
