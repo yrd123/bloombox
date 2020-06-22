@@ -16,7 +16,7 @@ def campus(request):
 def events(request):
     events=Events.objects.all().order_by("-date")
     context={'events':events}
-    return render(request,'events.html',context)
+    return render(request,'events-param.html',context)
 
 def registration(request,event):
     if request.method=="POST":
