@@ -1,6 +1,56 @@
-<br><p>Thanks {{name}} for registering for {{registeredEvent}}</p><br>
-<b>there are other events active tooo</b><br>
-{% for event in events %}
-<p>{{event.title}}</p>
-<a href="/registration/{{event.title}}"><b>Register</b></a><br>
-{% endfor %}
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+<!--CSS-->
+<link href="../static/styles/basic/preloader.css" rel="stylesheet"  />
+<link href="../static/styles/basic/aos.css" rel="stylesheet"  />
+<link href="../static/styles/basic/bootstrap.min.css" rel="stylesheet">
+<link href="../static/styles/basic/icofont/icofont.min.css" rel="stylesheet">
+<link href="../static/styles/basic/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="../static/styles/basic/owl.carousel.min.css" rel="stylesheet">
+
+<style>
+    .btn{
+        font-family: "Raleway", sans-serif;
+        background-color: #ccebff;
+        color: black;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 14px 14px;
+        border-radius: 4px;
+        transition: 0.5s;
+        line-height: 1;
+        margin: 10px 10px;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        
+    }
+
+    .btn:hover {
+        background: #0099ff;
+    }
+
+</style>
+
+
+<div class='container' style="padding:30px 30px; border: 5px solid #CCEBFF; margin-top:50px; border-radius: 24px;">
+    <div class='row justify-content-center'>
+        <h2 class='text-monospace text-center'>Thank You <span class='text-success'>{{name}}</span>, You Have Been 
+            Registered For <span class='text-danger'>{{registeredEvent}}</span> </h2>
+    </div>
+    <br>
+    <div class='row justify-content-center'>
+        <br><br>
+        <h5 style='letter-spacing: 2px;'>You Can Check Out Our Other Active Events: </h5><i class="icofont-hand-down icofont-2x"></i>
+    </div>
+    <div class='row justify-content-center'>
+        {% for event in events %}
+            <ul className="icofont-ul" style='list-style: none;'>
+                <li><span class="icofont-arrow-right icofont-1x"></span> {{event.title}} <a href="/registration/{{event.title}}"><button class='btn' type="submit">View Event</button></li></a>
+            </ul>
+        {% endfor %}
+    </div>        
+ </div>
