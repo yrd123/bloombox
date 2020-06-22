@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-{% load static %}
 <html>
+{% load static %}
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,8 +16,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta name="description"
         content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
     <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
@@ -27,11 +25,6 @@
     <meta name="author" content="Team BloomBox">
     <meta name="geo.region" content="IN">
     <link rel="canonical" href="">
-    <!-- Template Main CSS File -->
-    <link href="{% static 'styles/css/navbarcss.css' %}" rel="stylesheet">
-    <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
-    <link href="{% static 'styles/css/events.css' %}" rel="stylesheet">
-    <!-- <link href="indexpage.css" rel="stylesheet"> -->
     <!--CSS-->
     <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
     <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
@@ -39,516 +32,650 @@
     <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
     <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-    <!--Upar waale ko comment kiya hai, kyuki footer pe apply ho rahe the iske styles
-      But, ab woh cards ka shape badal gaya hai thoda bulky hua. -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <!-- Template Main CSS File -->
+    <link href="{% static 'styles/css/indexpage.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/navbarcss.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/events.css' %}" rel="stylesheet">
 </head>
-<!-- ======= Header ======= -->
-<header id="header" class="d-flex align-items-center">
-    <div class="container">
-        <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
-        <div class="logo d-block d-lg-none">
-            <a href="{% url 'index' %}">
-                <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid">
-            </a>
+
+<body onload="preloader();">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container">
+            <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+            <div class="logo d-block d-lg-none">
+                <a href="index.html">
+                    <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid">
+                </a>
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul class="nav-inner">
+                    <li>
+                        <a href="{% url 'index' %}">
+                            Home
+                            <i class="icofont-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'campus' %}">
+                            Campus Company
+                            <i class="icofont-company"></i>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="{% url 'events' %}">
+                            Events
+                            <i class="icofont-brand-slideshare"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'partners' %}">
+                            Partners
+                            <i class="icofont-handshake-deal"></i>
+                        </a>
+                    </li>
+                    <!--  <li class="nav-logo"><a href="index.html"><img src="media/images/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a></li> -->
+                    <li>
+                        <a href="{% url 'team' %}">
+                            Team
+                            <i class="icofont-people"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">
+                            About
+                            <i class="icofont-question"></i>
+                        </a>
+                    </li>
+                    <li class="drop-down">
+                        <a href="">
+                            Registration
+                            <i class="icofont-paper"></i>
+                        </a>
+                        <ul>
+                            <h5 class="dropdown-header">Active Events</h5>
+                            <li>
+                                <a href="#">Event 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 4</a>
+                            </li>
+                            <h5 class="dropdown-header">Recent Events</h5>
+                            <li>
+                                <a href="#">Event 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Event 5</a>
+                            </li>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact
+                        <i class="icofont-phone"></i>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
         </div>
-        <nav class="nav-menu d-none d-lg-block">
-            <ul class="nav-inner">
-                <li>
-                    <a href="{% url 'index' %}">
-                        Home
-                        <i class="icofont-home"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{% url 'campus' %}">
-                        Campus Company
-                        <i class="icofont-company"></i>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="{% url 'events' %}">
-                        Events
-                        <i class="icofont-brand-slideshare"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{% url 'partners' %}">
-                        Partners
-                        <i class="icofont-handshake-deal"></i>
-                    </a>
-                </li>
-                <!--  <li class="nav-logo"><a href="index.html"><img src="media/images/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a></li> -->
-                <li>
-                    <a href="{% url 'team' %}">
-                        Team
-                        <i class="icofont-people"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{% url 'about' %}">
-                        About
-                        <i class="icofont-question"></i>
-                    </a>
-                </li>
-                <li class="drop-down">
-                    <a href="">
-                        Registration
-                        <i class="icofont-paper"></i>
-                    </a>
-                    <ul>
-                        <h5 class="dropdown-header">Active Events</h5>
-                        <li>
-                            <a href="#">Event 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Event 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Event 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Event 4</a>
-                        </li>
-                        <h5 class="dropdown-header">Recent Events</h5>
-                        <li>
-                            <a href="#">Event 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Event 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Event 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Event 4</a>
-                        </li>
-                        <li>
-                            <a href="#">Event 5</a>
-                        </li>
-                </li>
-            </ul>
-            </li>
-            <li>
-                <a href="#">
-                    Contact
-                    <i class="icofont-phone"></i>
-                </a>
-            </li>
-            </ul>
-        </nav>
-        <!-- .nav-menu -->
-    </div>
-</header>
-<!-- End Header -->
-
-<body>
+    </header>
+    <!-- End Header -->
     <br>
-    <div class="section-title">
-        <h2>Events</h2><br><br>
-        <p>We conduct various Events all over the year, to hone talent.</p>
-    </div>
-    <div class="tab">
-        <center>
-            <button id="allButton" class="tablinks" onclick="eventType(event, 'All')">All</button>
-            <button class="tablinks" onclick="eventType(event, 'Hackathons')">Hackathons</button>
-            <button class="tablinks" onclick="eventType(event, 'Speaker/Panel Sessions')">
-                Speaker/Panel
-                Sessions
-            </button>
-            <button class="tablinks" onclick="eventType(event, 'Hands On Workshops')">Hands On Workshops</button>
-            <button class="tablinks" onclick="eventType(event, 'Fun Learning')">Fun Learning</button>
-        </center>
-    </div>
-    <div id="All" class="tabcontent active">
-        {% for event in events %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
+    <br>
+    <br>
+    <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tab1">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab2">Hackathons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab3">Speaker/Panel Sessions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab4">Hands On Workshops</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab5">Fun Learning</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!--All -->
+            <div id="tab1" class="container tab-pane active">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        {% for event in events %}
+                        <!--Event Card-->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="event-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="event-photo">
+                                            <div class="event-photo-container">
+                                                <div class="event-photo-main">
+                                                    <img class="imageTop"
+                                                        src="{{event.moreImages.all.0.moreImages.url}}"
+                                                        alt="green apple slice">
+                                                </div>
+                                                {% if event.moreImages.all %}
+                                                <div class="event-photo-album">
+                                                    <ul>
+                                                        {% for image in event.moreImages.all %}
+                                                        {% if forloop.counter0 == 0 %}
+                                                        <li onclick="moreImages(this)" class="active">
+                                                            {% else %}
+                                                        <li onclick="moreImages(this)">
+                                                            {% endif %}
+                                                            <img src="{{image.moreImages.url}}" alt="">
+                                                        </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="event-info">
+                                            <div class="event-title">
+                                                <h1>{{event.title}}</h1>
+                                            </div>
+                                            <div class="description">
+                                                <div class="desc-content">
+                                                    {{event.description}}
+                                                </div>
+                                                <div class="date">{{event.date}}</div>
+                                            </div>
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore " data-toggle="modal"
+                                                    data-target="div[name='exampleModal{{event.title}}']">
+                                                    Know
+                                                    More
+                                                </button>
+                                            </a>
+                                            {% if event.is_active %}
+                                            <a href="registration/{{event.title}}">
+                                                <button type="button" class="btn btn-seemore ">Register</button>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header"
+                                                    style="background-color: #0099ff;color: white;">
+                                                    <b>
+                                                        <h3 style="font-weight: 600; text-align: center" class="modal-title">
+                                                            {{event.title}}</h3>
+                                                    </b>
+                                                </div>
+                                                <div style="font-size: 15px;" class="modal-body">
+                                                    <center>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Details</h3>
+                                                        </b>
+                                                        <p>{{event.details}}</p>
+                                                        <br>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Date</h3>
+                                                        </b>
+                                                        <p>{{event.date}}</p>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer" style="background-color:#0099ff;">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Event Card Ends-->
+                        {% endfor %}
                     </div>
-                    {% if event.moreImages.all %}
-                    <div class="photo-album">
-                        <ul>
-                            {% for image in event.moreImages.all %}
-                            {% if forloop.counter0 == 0 %}
-                            <li onclick="moreImages(this)" class="active">
-                                {% else %}
-                            <li onclick="moreImages(this)">
-                                {% endif %}
-                                <img src="{{image.moreImages.url}}" alt="green apple">
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
                 </div>
             </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{event.title}}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{event.description}}</div>
-                    <br>
-                    <div class="date">{{event.date}}</div>
-                </div>
-                <button type="button" class="buy--btn" data-toggle="modal"
-                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                {% if event.is_active %}
-                <a href="registration/{{event.title}}">
-                    <button class="buy--btn">Register</button>
-                </a>
-                {% endif %}
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #22208b;color: white;">
-                            <b>
-                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
-                            </b>
+            <!--Hackathons-->
+            <div id="tab2" class="container tab-pane fade">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        {% for event in events %}
+                        {% if event.eventType == 'Hackathon' %}
+                        <!--Event Card-->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="event-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="event-photo">
+                                            <div class="event-photo-container">
+                                                <div class="event-photo-main">
+                                                    <img class="imageTop"
+                                                        src="{{event.moreImages.all.0.moreImages.url}}"
+                                                        alt="green apple slice">
+                                                </div>
+                                                {% if event.moreImages.all %}
+                                                <div class="event-photo-album">
+                                                    <ul>
+                                                        {% for image in event.moreImages.all %}
+                                                        {% if forloop.counter0 == 0 %}
+                                                        <li onclick="moreImages(this)" class="active">
+                                                            {% else %}
+                                                        <li onclick="moreImages(this)">
+                                                            {% endif %}
+                                                            <img src="{{image.moreImages.url}}" alt="">
+                                                        </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="event-info">
+                                            <div class="event-title">
+                                                <h1>{{event.title}}</h1>
+                                            </div>
+                                            <div class="description">
+                                                <div class="desc-content">
+                                                    {{event.description}}
+                                                </div>
+                                                <div class="date">{{event.date}}</div>
+                                            </div>
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore " data-toggle="modal"
+                                                    data-target="div[name='example2Modal{{event.title}}']">
+                                                    Know
+                                                    More
+                                                </button>
+                                            </a>
+                                            {% if event.is_active %}
+                                            <a href="registration/{{event.title}}">
+                                                <button type="button" class="btn btn-seemore ">Register</button>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header"
+                                                    style="background-color: #0099ff;color: white;">
+                                                    <b>
+                                                        <h3 style="font-weight: 600; text-align: center" class="modal-title">
+                                                            {{event.title}}</h3>
+                                                    </b>
+                                                </div>
+                                                <div style="font-size: 15px;" class="modal-body">
+                                                    <center>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Details</h3>
+                                                        </b>
+                                                        <p>{{event.details}}</p>
+                                                        <br>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Date</h3>
+                                                        </b>
+                                                        <p>{{event.date}}</p>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer" style="background-color:#0099ff;">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div style="font-size: 20px;" class="modal-body">
-                            <center><b>
-                                    <h3 style="font-weight: 600;">Details</h3>
-                                </b>
-                                <p>{{event.details}}</p><br>
-                                <b>
-                                    <h3 style="font-weight: 600;">Date</h3>
-                                </b>
-                                <p>{{event.date}}</p>
-                            </center>
-                        </div>
-                        <div class="modal-footer" style="background-color:#22208b;">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <!--Event Card Ends-->
+                        {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-
-
-        </section>
-        {% endfor %}
-    </div>
-    <div id="Hackathons" class="tabcontent">
-        {% for event in events %}
-        {% if event.eventType == 'Hackathon' %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
+            <!--Speaker/Panel Sessions-->
+            <div id="tab3" class="container tab-pane fade">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        {% for event in events %}
+                        {% if event.eventType == 'Panel Session' %}
+                        <!--Event Card-->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="event-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="event-photo">
+                                            <div class="event-photo-container">
+                                                <div class="event-photo-main">
+                                                    <img class="imageTop"
+                                                        src="{{event.moreImages.all.0.moreImages.url}}"
+                                                        alt="green apple slice">
+                                                </div>
+                                                {% if event.moreImages.all %}
+                                                <div class="event-photo-album">
+                                                    <ul>
+                                                        {% for image in event.moreImages.all %}
+                                                        {% if forloop.counter0 == 0 %}
+                                                        <li onclick="moreImages(this)" class="active">
+                                                            {% else %}
+                                                        <li onclick="moreImages(this)">
+                                                            {% endif %}
+                                                            <img src="{{image.moreImages.url}}" alt="">
+                                                        </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="event-info">
+                                            <div class="event-title">
+                                                <h1>{{event.title}}</h1>
+                                            </div>
+                                            <div class="description">
+                                                <div class="desc-content">
+                                                    {{event.description}}
+                                                </div>
+                                                <div class="date">{{event.date}}</div>
+                                            </div>
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore " data-toggle="modal"
+                                                    data-target="div[name='example2Modal{{event.title}}']">
+                                                    Know
+                                                    More
+                                                </button>
+                                            </a>
+                                            {% if event.is_active %}
+                                            <a href="registration/{{event.title}}">
+                                                <button type="button" class="btn btn-seemore ">Register</button>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header"
+                                                    style="background-color: #0099ff;color: white;">
+                                                    <b>
+                                                        <h3 style="font-weight: 600; text-align: center" class="modal-title">
+                                                            {{event.title}}</h3>
+                                                    </b>
+                                                </div>
+                                                <div style="font-size: 15px;" class="modal-body">
+                                                    <center>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Details</h3>
+                                                        </b>
+                                                        <p>{{event.details}}</p>
+                                                        <br>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Date</h3>
+                                                        </b>
+                                                        <p>{{event.date}}</p>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer" style="background-color:#0099ff;">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Event Card Ends-->
+                        {% endif %}
+                        {% endfor %}
                     </div>
-                    {% if event.moreImages.all %}
-                    <div class="photo-album">
-                        <ul>
-                            {% for image in event.moreImages.all %}
-                            {% if forloop.counter0 == 0 %}
-                            <li onclick="moreImages(this)" class="active">
-                                {% else %}
-                            <li onclick="moreImages(this)">
-                                {% endif %}
-                                <img src="{{image.moreImages.url}}" alt="green apple">
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
                 </div>
             </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{event.title}}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{event.description}}</div>
-                    <br>
-                    <div class="date">{{event.date}}</div>
-                </div>
-                <button type="button" class="buy--btn" data-toggle="modal"
-                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                {% if event.is_active %}
-                <a href="registration/{{event.title}}">
-                    <button class="buy--btn">Register</button>
-                </a>
-                {% endif %}
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #22208b;color: white;">
-                            <b>
-                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
-                            </b>
-
+            <!--Hands On Workshops-->
+            <div id="tab4" class="container tab-pane fade">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        {% for event in events %}
+                        {% if event.eventType == 'Workshop' %}
+                        <!--Event Card-->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="event-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="event-photo">
+                                            <div class="event-photo-container">
+                                                <div class="event-photo-main">
+                                                    <img class="imageTop"
+                                                        src="{{event.moreImages.all.0.moreImages.url}}"
+                                                        alt="green apple slice">
+                                                </div>
+                                                {% if event.moreImages.all %}
+                                                <div class="event-photo-album">
+                                                    <ul>
+                                                        {% for image in event.moreImages.all %}
+                                                        {% if forloop.counter0 == 0 %}
+                                                        <li onclick="moreImages(this)" class="active">
+                                                            {% else %}
+                                                        <li onclick="moreImages(this)">
+                                                            {% endif %}
+                                                            <img src="{{image.moreImages.url}}" alt="">
+                                                        </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="event-info">
+                                            <div class="event-title">
+                                                <h1>{{event.title}}</h1>
+                                            </div>
+                                            <div class="description">
+                                                <div class="desc-content">
+                                                    {{event.description}}
+                                                </div>
+                                                <div class="date">{{event.date}}</div>
+                                            </div>
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore " data-toggle="modal"
+                                                    data-target="div[name='example2Modal{{event.title}}']">
+                                                    Know
+                                                    More
+                                                </button>
+                                            </a>
+                                            {% if event.is_active %}
+                                            <a href="registration/{{event.title}}">
+                                                <button type="button" class="btn btn-seemore ">Register</button>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header"
+                                                    style="background-color: #0099ff;color: white;">
+                                                    <b>
+                                                        <h3 style="font-weight: 600; text-align: center" class="modal-title">
+                                                            {{event.title}}</h3>
+                                                    </b>
+                                                </div>
+                                                <div style="font-size: 15px;" class="modal-body">
+                                                    <center>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Details</h3>
+                                                        </b>
+                                                        <p>{{event.details}}</p>
+                                                        <br>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Date</h3>
+                                                        </b>
+                                                        <p>{{event.date}}</p>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer" style="background-color:#0099ff;">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div style="font-size: 20px;" class="modal-body">
-                            <center><b>
-                                    <h3 style="font-weight: 600;">Details</h3>
-                                </b>
-                                <p>{{event.details}}</p><br>
-                                <b>
-                                    <h3 style="font-weight: 600;">Date</h3>
-                                </b>
-                                <p>{{event.date}}</p>
-                            </center>
-                        </div>
-                        <div class="modal-footer" style="background-color:#22208b;">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <!--Event Card Ends-->
+                        {% endif %}
+                        {% endfor %}
                     </div>
-
                 </div>
             </div>
-        </section>
-        {% endif %}
-        {% endfor %}
-    </div>
-    <div id="Speaker/Panel Sessions" class="tabcontent">
-        {% for event in events %}
-        {% if event.eventType == 'Panel Session' %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
-                    </div>
-                    {% if event.moreImages.all %}
-                    <div class="photo-album">
-                        <ul>
-                            {% for image in event.moreImages.all %}
-                            {% if forloop.counter0 == 0 %}
-                            <li onclick="moreImages(this)" class="active">
-                                {% else %}
-                            <li onclick="moreImages(this)">
-                                {% endif %}
-                                <img src="{{image.moreImages.url}}" alt="green apple">
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{event.title}}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{event.description}}</div>
-                    <br>
-                    <div class="date">{{event.date}}</div>
-                </div>
-                <button type="button" class="buy--btn" data-toggle="modal"
-                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                {% if event.is_active %}
-                <a href="registration/{{event.title}}">
-                    <button class="buy--btn">Register</button>
-                </a>
-                {% endif %}
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #22208b;color: white;">
-                            <b>
-                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
-                            </b>
+            <!--Fun Learning-->
+            <div id="tab5" class="container tab-pane fade">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        {% for event in events %}
+                        {% if event.eventType == 'FunLearning' %}
+                        <!--Event Card-->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="event-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="event-photo">
+                                            <div class="event-photo-container">
+                                                <div class="event-photo-main">
+                                                    <img class="imageTop"
+                                                        src="{{event.moreImages.all.0.moreImages.url}}"
+                                                        alt="green apple slice">
+                                                </div>
+                                                {% if event.moreImages.all %}
+                                                <div class="event-photo-album">
+                                                    <ul>
+                                                        {% for image in event.moreImages.all %}
+                                                        {% if forloop.counter0 == 0 %}
+                                                        <li onclick="moreImages(this)" class="active">
+                                                            {% else %}
+                                                        <li onclick="moreImages(this)">
+                                                            {% endif %}
+                                                            <img src="{{image.moreImages.url}}" alt="">
+                                                        </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="event-info">
+                                            <div class="event-title">
+                                                <h1>{{event.title}}</h1>
+                                            </div>
+                                            <div class="description">
+                                                <div class="desc-content">
+                                                    {{event.description}}
+                                                </div>
+                                                <div class="date">{{event.date}}</div>
+                                            </div>
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore " data-toggle="modal"
+                                                    data-target="div[name='example2Modal{{event.title}}']">
+                                                    Know
+                                                    More
+                                                </button>
+                                            </a>
+                                            {% if event.is_active %}
+                                            <a href="registration/{{event.title}}">
+                                                <button type="button" class="btn btn-seemore ">Register</button>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header"
+                                                    style="background-color: #0099ff;color: white;">
+                                                    <b>
+                                                        <h3 style="font-weight: 600; text-align: center;" class="modal-title">
+                                                            {{event.title}}</h3>
+                                                    </b>
+                                                </div>
+                                                <div style="font-size: 15px;" class="modal-body">
+                                                    <center>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Details</h3>
+                                                        </b>
+                                                        <p>{{event.details}}</p>
+                                                        <br>
+                                                        <b>
+                                                            <h3 style="font-weight: 400;">Date</h3>
+                                                        </b>
+                                                        <p>{{event.date}}</p>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer" style="background-color:#0099ff;">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div style="font-size: 20px;" class="modal-body">
-                            <center><b>
-                                    <h3 style="font-weight: 600;">Details</h3>
-                                </b>
-                                <p>{{event.details}}</p><br>
-                                <b>
-                                    <h3 style="font-weight: 600;">Date</h3>
-                                </b>
-                                <p>{{event.date}}</p>
-                            </center>
-                        </div>
-                        <div class="modal-footer" style="background-color:#22208b;">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                        <!--Event Card Ends-->
+                        {% endif %}
+                        {% endfor %}
                     </div>
-
                 </div>
             </div>
-        </section>
-        {% endif %}
-        {% endfor %}
-    </div>
-    <div id="Hands On Workshops" class="tabcontent">
-        {% for event in events %}
-        {% if event.eventType == 'Workshop' %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
-                    </div>
-                    {% if event.moreImages.all %}
-                    <div class="photo-album">
-                        <ul>
-                            {% for image in event.moreImages.all %}
-                            {% if forloop.counter0 == 0 %}
-                            <li onclick="moreImages(this)" class="active">
-                                {% else %}
-                            <li onclick="moreImages(this)">
-                                {% endif %}
-                                <img src="{{image.moreImages.url}}" alt="green apple">
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{event.title}}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{event.description}}</div>
-                    <br>
-                    <div class="date">{{event.date}}</div>
-                </div>
-                <button type="button" class="buy--btn" data-toggle="modal"
-                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                {% if event.is_active %}
-                <a href="registration/{{event.title}}">
-                    <button class="buy--btn">Register</button>
-                </a>
-                {% endif %}
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #22208b;color: white;">
-                            <b>
-                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
-                            </b>
-                        </div>
-                        <div style="font-size: 20px;" class="modal-body">
-                            <center><b>
-                                    <h3 style="font-weight: 600;">Details</h3>
-                                </b>
-                                <p>{{event.details}}</p><br>
-                                <b>
-                                    <h3 style="font-weight: 600;">Date</h3>
-                                </b>
-                                <p>{{event.date}}</p>
-                            </center>
-                        </div>
-                        <div class="modal-footer" style="background-color:#22208b;">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        {% endif %}
-        {% endfor %}
-    </div>
-    <div id="Fun Learning" class="tabcontent">
-        {% for event in events %}
-        {% if event.eventType == 'FunLearning' %}
-        <section class="product">
-            <div class="product__photo">
-                <div class="photo-container">
-                    <div class="photo-main">
-                        <img class="imageTop" src="{{event.moreImages.all.0.moreImages.url}}" alt="green apple slice">
-                    </div>
-                    {% if event.moreImages.all %}
-                    <div class="photo-album">
-                        <ul>
-                            {% for image in event.moreImages.all %}
-                            {% if forloop.counter0 == 0 %}
-                            <li onclick="moreImages(this)" class="active">
-                                {% else %}
-                            <li onclick="moreImages(this)">
-                                {% endif %}
-                                <img src="{{image.moreImages.url}}" alt="green apple">
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="product__info">
-                <div class="title">
-                    <h1>{{event.title}}</h1>
-                </div>
-                <div class="description">
-                    <div class="desc-content">{{event.description}}</div>
-                    <br>
-                    <div class="date">{{event.date}}</div>
-                </div>
-                <button type="button" class="buy--btn" data-toggle="modal"
-                    data-target="div[name='exampleModal{{event.title}}']">Know More</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                {% if event.is_active %}
-                <a href="registration/{{event.title}}">
-                    <button class="buy--btn">Register</button>
-                </a>
-                {% endif %}
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #22208b;color: white;">
-                            <b>
-                                <h3 style="font-weight: 700;" class="modal-title">{{event.title}}</h3>
-                            </b>
-                        </div>
-                        <div style="font-size: 20px;" class="modal-body">
-                            <center><b>
-                                    <h3 style="font-weight: 600;">Details</h3>
-                                </b>
-                                <p>{{event.details}}</p><br>
-                                <b>
-                                    <h3 style="font-weight: 600;">Date</h3>
-                                </b>
-                                <p>{{event.date}}</p>
-                            </center>
-                        </div>
-                        <div class="modal-footer" style="background-color:#22208b;">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        {% endif %}
-        {% endfor %}
+        </div>
     </div>
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -583,6 +710,10 @@
                                     <li>
                                         <i class="bx bx-chevron-right"></i>
                                         <a href="{% url 'about' %}">About</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -634,8 +765,12 @@
         </div>
     </footer>
     <!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+    </a>
     <!-- Preloader -->
-    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+    <script src="assets/js/distBabel/bundle.js"></script>
     <!--Check if site works without this-->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <!-- Vendor JS Files -->
