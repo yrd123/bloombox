@@ -127,6 +127,7 @@
       topSpacing: 0,
       zIndex: '50'
     });
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
