@@ -63,7 +63,22 @@
     </header>
     <!-- End Header -->
     <br>
-    <br>
+    <div class="section-title" style="margin-top: 0px;padding-bottom: 10px;">
+        <h2>Events</h2>
+        <p>We help business minds at our campus, turn their ideas into reality</p>
+    </div>
+    {% if registered %}
+    <div class='container' style="padding:5px 5px;background-color: rgb(230, 230, 230); border-radius: 24px;font-size: 10px;box-shadow: 3px 5px 5px -1px rgb(73, 73, 73)">
+        <div class='row justify-content-center'>
+            <h5 class='text-monospace text-center'>Thank You <span class='text-success'>{{name}}</span>, You Have Been 
+                Registered For <span class='text-danger'>{{registeredEvent}}</span> </h5>
+        </div>
+       <!-- <div class='row justify-content-center'>
+            <h6 style='letter-spacing: 2px;'>You Can Check Out Our Other Active Events </h6>&nbsp;&nbsp;<i class="icofont-hand-down icofont-2x"></i>
+        </div>
+    -->
+     </div>
+    {% endif %}
     <br>
     <div class="container">
         <!-- Nav tabs -->
@@ -124,8 +139,8 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <div class="event-info">
-                                            <div class="event-title">
-                                                <h1>{{event.title}}</h1>
+                                            <div class="event-title"><h1>{{event.title}} {% if event.is_active %}<span style="font-weight:800;background-color: rgb(76, 187, 2);color:white;font-size: 10px;border:2px solid rgb(0, 172, 0);
+                                                box-shadow: 3px 5px 5px -1px rgb(0, 145, 0);border-radius: 10px;padding:5px;">Active</span>{% endif %}</h1>
                                             </div>
                                             <div class="description">
                                                 <div class="desc-content">
@@ -226,8 +241,8 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <div class="event-info">
-                                            <div class="event-title">
-                                                <h1>{{event.title}}</h1>
+                                            <div class="event-title"><h1>{{event.title}} {% if event.is_active %}<span style="font-weight:800;background-color: rgb(83, 204, 2);color:white;font-size: 10px;border:2px solid rgb(0, 214, 0);
+                                                box-shadow: 3px 5px 5px -1px rgb(0, 145, 0);border-radius: 10px;padding:5px;">Active</span>{% endif %}</h1>
                                             </div>
                                             <div class="description">
                                                 <div class="desc-content">
@@ -329,8 +344,8 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <div class="event-info">
-                                            <div class="event-title">
-                                                <h1>{{event.title}}</h1>
+                                            <div class="event-title"><h1>{{event.title}} {% if event.is_active %}<span style="font-weight:800;background-color: rgb(83, 204, 2);color:white;font-size: 10px;border:2px solid rgb(0, 214, 0);
+                                                box-shadow: 3px 5px 5px -1px rgb(0, 145, 0);border-radius: 10px;padding:5px;">Active</span>{% endif %}</h1>
                                             </div>
                                             <div class="description">
                                                 <div class="desc-content">
@@ -432,8 +447,8 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <div class="event-info">
-                                            <div class="event-title">
-                                                <h1>{{event.title}}</h1>
+                                            <div class="event-title"><h1>{{event.title}} {% if event.is_active %}<span style="font-weight:800;background-color: rgb(83, 204, 2);color:white;font-size: 10px;border:2px solid rgb(0, 214, 0);
+                                                box-shadow: 3px 5px 5px -1px rgb(0, 145, 0);border-radius: 10px;padding:5px;">Active</span>{% endif %}</h1>
                                             </div>
                                             <div class="description">
                                                 <div class="desc-content">
@@ -535,8 +550,8 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <div class="event-info">
-                                            <div class="event-title">
-                                                <h1>{{event.title}}</h1>
+                                            <div class="event-title"><h1>{{event.title}} {% if event.is_active %}<span style="font-weight:800;background-color: rgb(83, 204, 2);color:white;font-size: 10px;border:2px solid rgb(0, 214, 0);
+                                                box-shadow: 3px 5px 5px -1px rgb(0, 145, 0);border-radius: 10px;padding:5px;">Active</span>{% endif %}</h1>
                                             </div>
                                             <div class="description">
                                                 <div class="desc-content">

@@ -15,7 +15,7 @@ def campus(request):
 
 def events(request):
     events=Events.objects.all().order_by("-date")
-    context={'events':events}
+    context={'events':events,'registered':False}
     return render(request,'events.html',context)
 
 def registration(request,event):
@@ -42,10 +42,13 @@ def registration(request,event):
             branch=request.POST["branch"]
             var=EventRegistrations.objects.create(title=eve,name=name,email=email,contact=contact,college=college,branch=branch)
             var.save()
-        eventlist=Events.objects.exclude(title=event)
+        '''eventlist=Events.objects.exclude(title=event)
         activeEvents=[eve for eve in eventlist if eve.is_active()]
         print(activeEvents)
-        return render(request,"thankyou.html",{'events':activeEvents,'registeredEvent':event,'name':name})
+        return render(request,"thankyou.html",{'events':activeEvents,'registeredEvent':event,'name':name})'''
+        events=Events.objects.all().order_by("-date")
+        context={'events':events,'registered':True,'registeredEvent':event,'name':name}
+        return render(request,'events.html',context)
     else:
         if Events.objects.get(title=event).is_active():
             eve=Events.objects.get(title=event)
