@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import datetime,date    
-import os
+import os,pytz
 # Create your models here.
 class Campus(models.Model):
     name=models.CharField(max_length=100)
@@ -29,7 +29,9 @@ class Events(models.Model):
     eventType=models.CharField(max_length=13, choices=TYPE_CHOICES, default="Panel Session")
     deadline=models.DateField(help_text = "Please use the following format: <em>YYYY-MM-DD</em>.")
     def is_active(self):
-        return self.deadline > date.today()
+        IST=pytz.timezone('Asia/Kolkata')
+        today=datetime.now(IST).date()
+        return self.deadline > today
 
 class EventImages(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="moreImages")
