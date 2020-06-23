@@ -144,10 +144,12 @@
                                             </div>
                                             <div class="description">
                                                 <div class="desc-content">
-                                                    {{event.description}} abcdefghijklmnopqrstuvwxyz
-                                                    abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz hello my name is param shendekar, and here i am testing about what is happening here. whats the issue?
+                                                    {{event.description}} 
                                                 </div>
                                                 <div class="date">{{event.date}}</div>
+                                                {% if event.is_active %}
+                                                <div class="date"><b>Deadline: {{event.deadline}}</b></div>
+                                                {% endif %}
                                             </div>
                                             <a href="#">
                                                 <button type="button" class="btn btn-seemore " data-toggle="modal"
@@ -249,6 +251,9 @@
                                                     {{event.description}}
                                                 </div>
                                                 <div class="date">{{event.date}}</div>
+                                                {% if event.is_active %}
+                                                <div class="date"><b>Deadline: {{event.deadline}}</b></div>
+                                                {% endif %}
                                             </div>
                                             <a href="#">
                                                 <button type="button" class="btn btn-seemore " data-toggle="modal"
@@ -352,6 +357,9 @@
                                                     {{event.description}}
                                                 </div>
                                                 <div class="date">{{event.date}}</div>
+                                                {% if event.is_active %}
+                                                <div class="date"><b>Deadline: {{event.deadline}}</b></div>
+                                                {% endif %}
                                             </div>
                                             <a href="#">
                                                 <button type="button" class="btn btn-seemore " data-toggle="modal"
@@ -455,6 +463,9 @@
                                                     {{event.description}}
                                                 </div>
                                                 <div class="date">{{event.date}}</div>
+                                                {% if event.is_active %}
+                                                <div class="date"><b>Deadline: {{event.deadline}}</b></div>
+                                                {% endif %}
                                             </div>
                                             <a href="#">
                                                 <button type="button" class="btn btn-seemore " data-toggle="modal"
@@ -558,6 +569,9 @@
                                                     {{event.description}}
                                                 </div>
                                                 <div class="date">{{event.date}}</div>
+                                                {% if event.is_active %}
+                                                <div class="date"><b>Deadline: {{event.deadline}}</b></div>
+                                                {% endif %}
                                             </div>
                                             <a href="#">
                                                 <button type="button" class="btn btn-seemore " data-toggle="modal"
