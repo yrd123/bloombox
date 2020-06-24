@@ -52,9 +52,9 @@
                     <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
                     <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
                     <li class="active"><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
-                    <!-- <a href="index.html"><img src="media/images/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a> -->
+                    <li><a href="{% url 'index' %}"><img style="height:40px;width:40px;box-shadow: none !important;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" ></a> </li>
                     <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
-                    <li><a href="{% url 'team' %}">Team<i class="icofont-people"></i></a></li>
+                    <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
                     <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
                 </ul>
             </nav>
@@ -65,7 +65,7 @@
     <br>
     <div class="section-title" style="margin-top: 0px;padding-bottom: 10px;">
         <h2>Events</h2>
-        <p>We help business minds at our campus, turn their ideas into reality</p>
+        <p>We conduct various Events all over the year, to hone talent.</p>
     </div>
     {% if registered %}
     <div class='container' style="padding:5px 5px;background-color: rgb(230, 230, 230); border-radius: 24px;font-size: 10px;box-shadow: 3px 5px 5px -1px rgb(73, 73, 73)">

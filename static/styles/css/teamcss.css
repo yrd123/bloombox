@@ -3,6 +3,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 #team {
     background: #eee !important;
+    padding-top: 30px;
 }
 
 .btn-primary:hover,
@@ -342,3 +343,7 @@ span {
 @media only screen and (max-width: 320px) {}
 
 @media only screen and (max-width: 240px) {}
+
+.tab-content>.container{
+    zoom:90%;
+}
