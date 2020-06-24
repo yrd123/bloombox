@@ -315,9 +315,11 @@ body {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../../../media/images/index/home-background-5.jpeg");
-  background-size: contain;
+  background: url("../../../media/images/index/home-background-5\ -\ Copy.jpeg");
+  background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
+  back
 }
 
 #hero .hero-container {

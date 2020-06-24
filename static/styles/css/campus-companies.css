@@ -32,10 +32,9 @@
 
 img {
     max-width: 100%;
-    -webkit-filter: drop-shadow(1px 1px 3px #a6a6a6);
-    filter: drop-shadow(1px 1px 3px #a6a6a6);
+    /* -webkit-filter: drop-shadow(1px 1px 3px #a6a6a6);
+    filter: drop-shadow(1px 1px 3px #a6a6a6); */
 }
-  
   
 .event-content{
     margin:2% 6% 2% 8%;
