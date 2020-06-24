@@ -37,6 +37,21 @@
     <link href="{% static 'styles/css/navbarcss.css' %}" rel="stylesheet">
     <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
     <link href="{% static 'styles/css/events.css' %}" rel="stylesheet">
+
+    <style>
+        .title {
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        padding: 8px 20px;
+        margin: 5px;
+        background: #ccebff;
+        color: blue;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
+    </style>
 </head>
 
 <body onload="preloader();">
@@ -170,25 +185,16 @@
                                     <div class="modal fade" name="exampleModal{{event.title}}" role="dialog">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header" style="background-color: #ccebff;color: blue;">
-                                                    <b><h3 class="modal-title text-center">{{event.title}}</h3></b>
+                                            <div class="modal-content" style="padding:0 20px;">
+                                                <div class="modal-header text-monospace" 
+                                                style="color: blue; align-self: center;font-size: x-large;">{{event.title}}</div>
+                                                <div class="modal-body text-center justify-content-center">
+                                                        <h5 class="title">Details About Event:</h5><p>{{event.details}}</p><br>
+                                                        <h5 class="title">Date of Event:</h5><p>{{event.date}}</p>
                                                 </div>
-                                                <div style="font-size: 15px;" class="modal-body">
-                                                    <center>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Details</h3>
-                                                        </b>
-                                                        <p>{{event.details}}</p>
-                                                        <br>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Date</h3>
-                                                        </b>
-                                                        <p>{{event.date}}</p>
-                                                    </center>
-                                                </div>
-                                                <div class="modal-footer" style="background-color:#ccebff;">
-                                                    <button type="button" class="btn btn-default"
+                                                <div class="modal-footer" style=" align-self: center;">
+                                                    <button type="button" class="btn btn-default btn-seemore" 
+                                                    style="border:2px solid black; font-size:medium;"
                                                         data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
@@ -273,29 +279,16 @@
                                     <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header"
-                                                    style="background-color: #0099ff;color: white;">
-                                                    <b>
-                                                        <h3 style="font-weight: 600; text-align: center" class="modal-title">
-                                                            {{event.title}}</h3>
-                                                    </b>
+                                            <div class="modal-content" style="padding:0 20px;">
+                                                <div class="modal-header text-monospace" 
+                                                style="color: blue; align-self: center;font-size: x-large;">{{event.title}}</div>
+                                                <div class="modal-body text-center justify-content-center">
+                                                        <h5 class="title">Details About Event:</h5><p>{{event.details}}</p><br>
+                                                        <h5 class="title">Date of Event:</h5><p>{{event.date}}</p>
                                                 </div>
-                                                <div style="font-size: 15px;" class="modal-body">
-                                                    <center>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Details</h3>
-                                                        </b>
-                                                        <p>{{event.details}}</p>
-                                                        <br>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Date</h3>
-                                                        </b>
-                                                        <p>{{event.date}}</p>
-                                                    </center>
-                                                </div>
-                                                <div class="modal-footer" style="background-color:#0099ff;">
-                                                    <button type="button" class="btn btn-default"
+                                                <div class="modal-footer" style=" align-self: center;">
+                                                    <button type="button" class="btn btn-default btn-seemore" 
+                                                    style="border:2px solid black; font-size:medium;"
                                                         data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
@@ -381,29 +374,16 @@
                                     <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header"
-                                                    style="background-color: #0099ff;color: white;">
-                                                    <b>
-                                                        <h3 style="font-weight: 600; text-align: center" class="modal-title">
-                                                            {{event.title}}</h3>
-                                                    </b>
+                                            <div class="modal-content" style="padding:0 20px;">
+                                                <div class="modal-header text-monospace" 
+                                                style="color: blue; align-self: center;font-size: x-large;">{{event.title}}</div>
+                                                <div class="modal-body text-center justify-content-center">
+                                                        <h5 class="title">Details About Event:</h5><p>{{event.details}}</p><br>
+                                                        <h5 class="title">Date of Event:</h5><p>{{event.date}}</p>
                                                 </div>
-                                                <div style="font-size: 15px;" class="modal-body">
-                                                    <center>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Details</h3>
-                                                        </b>
-                                                        <p>{{event.details}}</p>
-                                                        <br>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Date</h3>
-                                                        </b>
-                                                        <p>{{event.date}}</p>
-                                                    </center>
-                                                </div>
-                                                <div class="modal-footer" style="background-color:#0099ff;">
-                                                    <button type="button" class="btn btn-default"
+                                                <div class="modal-footer" style=" align-self: center;">
+                                                    <button type="button" class="btn btn-default btn-seemore" 
+                                                    style="border:2px solid black; font-size:medium;"
                                                         data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
@@ -489,29 +469,16 @@
                                     <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header"
-                                                    style="background-color: #0099ff;color: white;">
-                                                    <b>
-                                                        <h3 style="font-weight: 600; text-align: center" class="modal-title">
-                                                            {{event.title}}</h3>
-                                                    </b>
+                                            <div class="modal-content" style="padding:0 20px;">
+                                                <div class="modal-header text-monospace" 
+                                                style="color: blue; align-self: center;font-size: x-large;">{{event.title}}</div>
+                                                <div class="modal-body text-center justify-content-center">
+                                                        <h5 class="title">Details About Event:</h5><p>{{event.details}}</p><br>
+                                                        <h5 class="title">Date of Event:</h5><p>{{event.date}}</p>
                                                 </div>
-                                                <div style="font-size: 15px;" class="modal-body">
-                                                    <center>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Details</h3>
-                                                        </b>
-                                                        <p>{{event.details}}</p>
-                                                        <br>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Date</h3>
-                                                        </b>
-                                                        <p>{{event.date}}</p>
-                                                    </center>
-                                                </div>
-                                                <div class="modal-footer" style="background-color:#0099ff;">
-                                                    <button type="button" class="btn btn-default"
+                                                <div class="modal-footer" style=" align-self: center;">
+                                                    <button type="button" class="btn btn-default btn-seemore" 
+                                                    style="border:2px solid black; font-size:medium;"
                                                         data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
@@ -597,29 +564,16 @@
                                     <div class="modal fade" name="example2Modal{{event.title}}" role="dialog">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header"
-                                                    style="background-color: #0099ff;color: white;">
-                                                    <b>
-                                                        <h3 style="font-weight: 600; text-align: center;" class="modal-title">
-                                                            {{event.title}}</h3>
-                                                    </b>
+                                            <div class="modal-content" style="padding:0 20px;">
+                                                <div class="modal-header text-monospace" 
+                                                style="color: blue; align-self: center;font-size: x-large;">{{event.title}}</div>
+                                                <div class="modal-body text-center justify-content-center">
+                                                        <h5 class="title">Details About Event:</h5><p>{{event.details}}</p><br>
+                                                        <h5 class="title">Date of Event:</h5><p>{{event.date}}</p>
                                                 </div>
-                                                <div style="font-size: 15px;" class="modal-body">
-                                                    <center>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Details</h3>
-                                                        </b>
-                                                        <p>{{event.details}}</p>
-                                                        <br>
-                                                        <b>
-                                                            <h3 style="font-weight: 400;">Date</h3>
-                                                        </b>
-                                                        <p>{{event.date}}</p>
-                                                    </center>
-                                                </div>
-                                                <div class="modal-footer" style="background-color:#0099ff;">
-                                                    <button type="button" class="btn btn-default"
+                                                <div class="modal-footer" style=" align-self: center;">
+                                                    <button type="button" class="btn btn-default btn-seemore" 
+                                                    style="border:2px solid black; font-size:medium;"
                                                         data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
