@@ -102,40 +102,42 @@
         </div>
        <!-- <div class='row justify-content-center'>
             <h6 style='letter-spacing: 2px;'>You Can Check Out Our Other Active Events </h6>&nbsp;&nbsp;<i class="icofont-hand-down icofont-2x"></i>
-        </div>
-    -->
+        </div>-->
      </div>
     {% endif %}
     <br>
-    <div class="container">
-        <!-- Nav tabs -->
-        <ul class="nav nav-pills nav-justified" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#tab1">All</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab2">Hackathons</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab3">Speaker/Panel Sessions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab4">Hands On Workshops</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab5">Fun Learning</a>
-            </li>
-        </ul>
+    <div class="container-fluid">
+        <div class='container'>
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab1">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab2">Hackathons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab3">Speaker/Panel Sessions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab4">Hands On Workshops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab5">Fun Learning</a>
+                </li>
+            </ul>
+        </div>
+        
         <!-- Tab panes -->
         <div class="tab-content">
             <!--All -->
-            <div id="tab1" class="container tab-pane active">
+            <div id="tab1" class="container-fluid tab-pane active">
                 <br>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         {% for event in events %}
                         <!--Event Card-->
-                        <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="event-content">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6">
@@ -231,14 +233,14 @@
                 </div>
             </div>
             <!--Hackathons-->
-            <div id="tab2" class="container tab-pane fade">
+            <div id="tab2" class="container-fluid tab-pane fade">
                 <br>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         {% for event in events %}
                         {% if event.eventType == 'Hackathon' %}
                         <!--Event Card-->
-                        <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="event-content">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6">
@@ -333,14 +335,14 @@
                 </div>
             </div>
             <!--Speaker/Panel Sessions-->
-            <div id="tab3" class="container tab-pane fade">
+            <div id="tab3" class="container-fluid tab-pane fade">
                 <br>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         {% for event in events %}
                         {% if event.eventType == 'Panel Session' %}
                         <!--Event Card-->
-                        <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="event-content">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6">
@@ -430,14 +432,14 @@
                 </div>
             </div>
             <!--Hands On Workshops-->
-            <div id="tab4" class="container tab-pane fade">
+            <div id="tab4" class="container-fluid tab-pane fade">
                 <br>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         {% for event in events %}
                         {% if event.eventType == 'Workshop' %}
                         <!--Event Card-->
-                        <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="event-content">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6">
@@ -527,14 +529,14 @@
                 </div>
             </div>
             <!--Fun Learning-->
-            <div id="tab5" class="container tab-pane fade">
+            <div id="tab5" class="container-fluid tab-pane fade">
                 <br>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         {% for event in events %}
                         {% if event.eventType == 'FunLearning' %}
                         <!--Event Card-->
-                        <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="event-content">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6">

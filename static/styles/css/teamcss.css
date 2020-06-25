@@ -246,6 +246,9 @@ section .section-title {
     .noImage .card-social a {
         margin:10px;
     }
+    .backside{
+        width:305px;
+    }
 
 }
 
