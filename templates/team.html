@@ -34,9 +34,9 @@
     <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    
-    <link href="{% static 'styles/css/teamcss.css' %}" rel="stylesheet">
     <link href="{% static 'styles/css/indexpage.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/teamcss.css' %}" rel="stylesheet">
+    
 
     <style>
         .tab-content h3{
@@ -52,19 +52,29 @@
 </head>
 
 <body onload="preloader();">
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
+
+
+    <div class="wrapper-loader" id="loader" style="height:100vh;width:100%;">
+        <span class="loader">
+            <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" />
+        </span>
+    </div>
+
+
+
+     <!-- ======= Header ======= -->
+     <header id="header" class="d-flex align-items-center">
         <div class="container">
             <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
             <div class="logo d-block d-lg-none">
-                <a href="index.html"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+                <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
             </div>
             <nav class="nav-menu d-none d-lg-block">
                 <ul class="nav-inner">
                     <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
                     <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
                     <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
-                    <li><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a> </li>
+                    <li><a href="{% url 'index' %}"><img style="height:40px;width:40px;box-shadow: none !important;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" ></a> </li>
                     <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
                     <li class="active"><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
                     <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
@@ -306,7 +316,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Dhruman.jpg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Dhruman-resize.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Dhruman Gohil</h4>
                                                     <p class="card-text">Campus Company Head</p>
                                                 </div>
@@ -340,7 +350,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Jay_Jain.jpg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Sukhada Virkar.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Sukhada Virkar</h4>
                                                     <p class="card-text">Events & PR</p>
                                                 </div>
@@ -352,9 +362,9 @@
                                                     <h4 class="card-title">Sukhada Virkar</h4>
                                                     <p class="card-text">Events & PR</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/jay-jain-9a6b53188"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="https://www.facebook.com/profile.php?id=100008200567123"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:sukhada.v@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/sukhada-virkar-a680a31a0"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/sukhada.virkar.7"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -370,7 +380,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Aniket.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Yash Dedhia.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Yash Dedhia</h4>
                                                     <p class="card-text">Events & PR</p>
                                                 </div>
@@ -382,9 +392,9 @@
                                                     <h4 class="card-title">Yash Dedhia</h4>
                                                     <p class="card-text">Events & PR</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/aniket-kulkarni-13741b189/"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:dedhia.y@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/yash-dedhia-2a1207192"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/yaashdedhia"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -400,7 +410,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Sanyam.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Dishika Mehta.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Dishika Mehta</h4>
                                                     <p class="card-text">Events & PR</p>
                                                 </div>
@@ -412,9 +422,9 @@
                                                     <h4 class="card-title">Dishika Mehta</h4>
                                                     <p class="card-text">Events & PR</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/sanyam-gandhi-19148418a"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="https://www.facebook.com/sanyam.gandhi.961"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:dishika.m@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="http://linkedin.com/in/dishika-mehta-a303281a6"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -431,7 +441,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Animesh.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Param Mamania.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Param Mamania</h4>
                                                     <p class="card-text">Events & PR</p>
                                                 </div>
@@ -443,9 +453,9 @@
                                                     <h4 class="card-title">Param Mamania</h4>
                                                     <p class="card-text">Events & PR</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:param.mamania@yahoo.com"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="http://linkedin.com/in/param-mamania-0b86851a0"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/param.mamania"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -467,7 +477,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Jay_Jain.jpg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/ParamShendekar1391x1405.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Siddhi Rajwatkar</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                 </div>
@@ -480,8 +490,8 @@
                                                     <p class="card-text">Marketing Wing</p>
                                                     <div class="card-social">
                                                         <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/jay-jain-9a6b53188"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="https://www.facebook.com/profile.php?id=100008200567123"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -497,7 +507,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Aniket.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/ParamShendekar1391x1405.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Prasad Borkar</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                 </div>
@@ -509,9 +519,9 @@
                                                     <h4 class="card-title">Prasad Borkar</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/aniket-kulkarni-13741b189/"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:prasad.borkar@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="www.linkedin.com/in/prasad-yatindra-borkar-3229821a0"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/prasad.borkar1"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -527,7 +537,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Sanyam.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Neeraj Chaudhari.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Neeraj Chaudhari</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                 </div>
@@ -539,9 +549,9 @@
                                                     <h4 class="card-title">Neeraj Chaudhari</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/sanyam-gandhi-19148418a"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="https://www.facebook.com/sanyam.gandhi.961"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:neeraj.chaudhari@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/neeraj-chaudhari-52599a197"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -558,7 +568,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Animesh.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Viraj Thakkar.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Viraj Thakkar</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                 </div>
@@ -588,7 +598,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Animesh.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Sannidhya Shah.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Sannidhya Shah</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                 </div>
@@ -600,9 +610,9 @@
                                                     <h4 class="card-title">Sannidhya Shah</h4>
                                                     <p class="card-text">Marketing Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:sannidhya.shah@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/sannidhya-shah-a4b83a190"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/sannidhya.shah.9"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -625,7 +635,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Jay_Jain.jpg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Prathamesh Daphal.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Prathamesh Daphal</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                 </div>
@@ -637,9 +647,9 @@
                                                     <h4 class="card-title">Prathamesh Daphal</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/jay-jain-9a6b53188"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="https://www.facebook.com/profile.php?id=100008200567123"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:p.daphal@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/prathamesh-daphal-9002921aa"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/prathamesh.daphal.9"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -655,7 +665,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Aniket.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Binita Soni.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Binita Soni</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                 </div>
@@ -667,9 +677,9 @@
                                                     <h4 class="card-title">Binita Soni</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/aniket-kulkarni-13741b189/"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:binita.soni@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/binita-soni-693484196/"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/profile.php?id=100007518721999"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -685,7 +695,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Sanyam.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Siddharth Thakkar.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Siddharth Thakkar</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                 </div>
@@ -697,9 +707,9 @@
                                                     <h4 class="card-title">Siddharth Thakkar</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="https://www.linkedin.com/in/sanyam-gandhi-19148418a"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="https://www.facebook.com/sanyam.gandhi.961"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:s.thakkkar@somaiya.eu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="http://linkedin.com/in/siddharth-thakkar-334204190"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/madrista.sid.thakks7"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -716,7 +726,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Animesh.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Apurv Kulkarni.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Apurv Kulkarni</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                 </div>
@@ -728,9 +738,9 @@
                                                     <h4 class="card-title">Apurv Kulkarni</h4>
                                                     <p class="card-text">Social Media & Content Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:apurv.kulkarni@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/apurv.kulkarni.90"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/apurv-kulkarni"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -782,7 +792,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Vartika.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Yash Deorah.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Yash Deorah</h4>
                                                     <p class="card-text">Technical Team</p>
                                                 </div>
@@ -795,8 +805,8 @@
                                                     <p class="card-text">Technical Team</p>
                                                     <div class="card-social">
                                                         <a href="mailto:yash.deorah@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href=""><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href=""><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/yash-deorah-8213111aa/"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/profile.php?id=100004205776877"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -819,7 +829,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Sejal.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Sejal Chordiya.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Sejal Chordiya</h4>
                                                     <p class="card-text">Social Wing</p>
                                                 </div>
@@ -831,9 +841,9 @@
                                                     <h4 class="card-title">Sejal Chordiya</h4>
                                                     <p class="card-text">Social Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:sejal.chordiya@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/sejal-chordiya-69949b19b"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/profile.php?id=100006711406260"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -861,9 +871,9 @@
                                                     <h4 class="card-title">Bishandeep Arora</h4>
                                                     <p class="card-text">Social Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:bishandeep.a@somaiya.edu "><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/bishandeep-arora-183444190"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/bishandeep.arora"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -891,8 +901,8 @@
                                                     <h4 class="card-title">Krish Parekh</h4>
                                                     <p class="card-text">Social Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="mailto:krish.parekh@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/mwlite/in/krish-parekh-bb3b13197"><i class="icofont-linkedin icofont-2x"></i></a>
                                                         <a href="https://m.facebook.com/krish.parekh.9"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
@@ -902,14 +912,14 @@
                                 </div>
                             </div>
                             <!--End Team Member-->
-                                                        <!-- Team members -->
+                            <!-- Team members -->
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div class="mainflip">
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Sejal.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams//2020-21/Vani Kamani.png" alt="card image"></p>
                                                     <h4 class="card-title">Vani Kamani</h4>
                                                     <p class="card-text">Social Wing</p>
                                                 </div>
@@ -921,8 +931,8 @@
                                                     <h4 class="card-title">Vani Kamani</h4>
                                                     <p class="card-text">Social Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="mailto:vani.kamani@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/vani-kamani-026529194"><i class="icofont-linkedin icofont-2x"></i></a>
                                                         <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
@@ -939,7 +949,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Bishandeep.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/ParamShendekar1391x1405.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Dhruva Biradar</h4>
                                                     <p class="card-text">Social Wing</p>
                                                 </div>
@@ -951,9 +961,9 @@
                                                     <h4 class="card-title">Dhruva Biradar</h4>
                                                     <p class="card-text">Social Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:dhruva.b@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/dhruva.biradar"><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/dhruva-biradar-123b921a0"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -969,7 +979,7 @@
                                         <div class="frontside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p><img class=" img-fluid" src="../media/images/teams/2019-20/Krish.jpeg" alt="card image"></p>
+                                                    <p><img class=" img-fluid" src="../media/images/teams/2020-21/Hazel Fernandes.jpg" alt="card image"></p>
                                                     <h4 class="card-title">Hazel Fernandes</h4>
                                                     <p class="card-text">Social Wing</p>
                                                 </div>
@@ -981,9 +991,9 @@
                                                     <h4 class="card-title">Hazel Fernandes</h4>
                                                     <p class="card-text">Social Wing</p>
                                                     <div class="card-social">
-                                                        <a href="mailto:"><i class="icofont-email icofont-2x"></i></a>
-                                                        <a href="#"><i class="icofont-linkedin icofont-2x"></i></a>
-                                                        <a href="https://m.facebook.com/krish.parekh.9"><i class="icofont-facebook icofont-2x"></i></a>
+                                                        <a href="mailto:hazel.f@somaiya.edu"><i class="icofont-email icofont-2x"></i></a>
+                                                        <a href="https://www.linkedin.com/in/itshazelfernandes/ "><i class="icofont-linkedin icofont-2x"></i></a>
+                                                        <a href="https://www.facebook.com/hmf.pvt/"><i class="icofont-facebook icofont-2x"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5142,6 +5152,7 @@
     <!-- Preloader -->
     <script src="{% static 'scripts/script/preloader.js' %}"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/be4c1851d0.js"></script>
     <!-- Vendor JS Files -->
     <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
     <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>

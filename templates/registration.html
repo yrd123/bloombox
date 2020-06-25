@@ -68,7 +68,12 @@
 
     }
 </style>
-<body style="background-image:url('../media/images/events/registration-background.jpeg');background-size: contain;">
+<body style="background-image:url('../media/images/events/registration-background.jpeg');background-size: contain;" onload="preloader();">
+    <div class="wrapper-loader" id="loader" style="height:100vh;width:100%;">
+        <span class="loader">
+            <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" />
+        </span>
+    </div>
 <form id="form" method="POST" action="/registration/{{event.title}}">
     {% csrf_token %}
 

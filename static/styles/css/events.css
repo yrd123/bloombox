@@ -34,7 +34,7 @@ img {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   min-width: 300px; /* these two can be adjusted if boxes are getting generated of different sizes */                
-  min-height: 250px;
+  min-height: 365px;
 }
 
 .event-photo{
@@ -109,7 +109,7 @@ img {
 }
 
 .event-title{
-    margin-top: 10px;
+    margin-top: 5px;
 }
   
 .event-title h1 {
@@ -122,13 +122,13 @@ img {
 }
   
 .event-info .description {
-    margin: 2em 0.5em 2em 0em;
+    margin: 1em 0.5em 1em 0em; 
     font-size: small;
 }
 
 .event-info .description .desc-content{
     max-height: fit-content;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
   
 .event-info  .description .date{
@@ -157,4 +157,29 @@ img {
   .event-info .event-title{
     margin-top:0;
   }
+
+
+
+
+  .event-photo{
+    margin: 0 auto;
+    padding: 0  auto;
+}
+
+.event-photo-container{
+  left:0;
+  width:100%;
+  height:100%;
+}
+  .event-photo-main img{
+      left:0;
+      right:0;
+      margin:auto;
+  }
+  .img{
+    align-self: center;
+  }
+
+
+
 }

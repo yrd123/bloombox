@@ -35,6 +35,16 @@
         <link href="{% static 'styles/css/indexpage.css' %}" rel="stylesheet">
     </head>
     <body onload="preloader();">
+
+
+
+        <div class="wrapper-loader" id="loader" style="height:100vh;width:100%;">
+            <span class="loader">
+                <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" />
+            </span>
+        </div>
+
+
         <!-- ======= Hero Section ======= -->
         <section id="hero">
             <div class="hero-container">
@@ -56,7 +66,7 @@
             <div class="container">
                 <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
                 <div class="logo d-block d-lg-none">
-                    <a href="index.html"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+                    <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
                 </div>
                 <nav class="nav-menu d-none d-lg-block">
                     <ul class="nav-inner">
@@ -318,7 +328,7 @@
                 <div class="quote-item">
                     <img src="../media/images/index/quotes/Mark.jpg" class="quote-img" alt="">
                     <h3>Mark Zukerberg</h3>
-                    <h4>Ceo &amp; Founder</h4>
+                    <h4>CEO: Facebook</h4>
                     <p>
                         <i class="icofont-quote-left"></i>
                         The biggest risk is not taking any risk
@@ -328,7 +338,7 @@
                 <div class="quote-item">
                     <img src="../media/images/index/quotes/Warren_Buffett.jpg" class="quote-img" alt="">
                     <h3>Warren Buffett</h3>
-                    <h4>Designer</h4>
+                    <h4>CEO: Berkshire Hathaway</h4>
                     <p>
                         <i class="icofont-quote-left"></i>
                         Always be competing
@@ -338,7 +348,7 @@
                 <div class="quote-item">
                     <img src="../media/images/index/quotes/Walt_Disney.jpg" class="quote-img" alt="">
                     <h3>Walt Disney</h3>
-                    <h4>Store Owner</h4>
+                    <h4>The Walt Disney Company</h4>
                     <p>
                         <i class="icofont-quote-left"></i>
                         Its kind of fun to do the impossible
@@ -348,7 +358,7 @@
                 <div class="quote-item">
                     <img src="../media/images/index/quotes/Jack_Ma.jpg" class="quote-img" alt="">
                     <h3>Jack Ma</h3>
-                    <h4>Freelancer</h4>
+                    <h4>Co-Founder: Alibaba Group</h4>
                     <p>
                         <i class="icofont-quote-left"></i>
                         In carrying out e-commerce, the most important thing is to keep doing what you are doing right now with passion, to keep it up
@@ -409,7 +419,7 @@
         </div>
     </footer>
     <!-- End Footer -->
-    <div id="preloader"></div>
+    
     <a href="#" class="back-to-top">
         <i class="icofont-simple-up"></i>
     </a>
