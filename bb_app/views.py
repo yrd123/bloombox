@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import  User,auth
-from .models import Events,EventRegistrations,EventRegistrationsHackathon,Campus,Team,Message
+from .models import Events,EventRegistrations,EventRegistrationsHackathon,Campus,Message
 from datetime import datetime
 
 # Create your views here.
@@ -59,7 +59,7 @@ def partners(request):
         
 
 def team(request):
-    team20=Team.objects.filter(year=2020)
+    '''team20=Team.objects.filter(year=2020)
     team19=Team.objects.filter(year=2019)
     team18=Team.objects.filter(year=2018)
     team17=Team.objects.filter(year=2017)
@@ -68,8 +68,8 @@ def team(request):
     team14=Team.objects.filter(year=2014)
     team13=Team.objects.filter(year=2013)
     team12=Team.objects.filter(year=2012)
-    context={'team20':team20,'team19':team19,'team18':team18,'team17':team17,'team16':team16,'team15':team15,'team14':team14,'team13':team13,'team12':team12}
-    return render(request,'team.html',context)
+    context={'team20':team20,'team19':team19,'team18':team18,'team17':team17,'team16':team16,'team15':team15,'team14':team14,'team13':team13,'team12':team12}'''
+    return render(request,'team.html')
 
 def about(request):
     if request.method=="POST":
