@@ -146,20 +146,22 @@
                                                         src="{{event.moreImages.all.0.moreImages.url}}"
                                                         alt="">
                                                 </div>
-                                                {% if event.moreImages.all %}
-                                                <div class="event-photo-album">
-                                                    <ul>
-                                                        {% for image in event.moreImages.all %}
-                                                        {% if forloop.counter0 == 0 %}
-                                                        <li onclick="moreImages(this)" class="active">
-                                                            {% else %}
-                                                        <li onclick="moreImages(this)">
-                                                            {% endif %}
-                                                            <img src="{{image.moreImages.url}}" alt="">
-                                                        </li>
-                                                        {% endfor %}
-                                                    </ul>
-                                                </div>
+                                                {% if event.moreImages.all|length != 1 %}
+                                                    {% if event.moreImages.all %}
+                                                    <div class="event-photo-album">
+                                                        <ul>
+                                                            {% for image in event.moreImages.all %}
+                                                            {% if forloop.counter0 == 0 %}
+                                                            <li onclick="moreImages(this)" class="active">
+                                                                {% else %}
+                                                            <li onclick="moreImages(this)">
+                                                                {% endif %}
+                                                                <img src="{{image.moreImages.url}}" alt="">
+                                                            </li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                    {% endif %}
                                                 {% endif %}
                                             </div>
                                         </div>
@@ -169,6 +171,11 @@
                                             <div class="event-title"><h1>{{event.title}}{% if event.is_active %}
                                                 <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000; 
                                                 box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-success">Active</span>
+                                                {% else %}
+                                                {% if event.title == 'Ennovate 20' or event.title == 'Ennovate 2019' %}
+                                                <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000; 
+                                                box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-primary">Flagship</span>
+                                                {% endif %}
                                                 {% endif %}</h1>
                                             </div>
                                             <div class="description">
@@ -262,6 +269,11 @@
                                             <div class="event-title"><h1>{{event.title}} {% if event.is_active %}
                                                 <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000; 
                                                 box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-success">Active</span>
+                                                {% else %}
+                                                {% if event.title == 'Ennovate 20' or event.title == 'Ennovate 2019' %}
+                                                <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000; 
+                                                box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-primary">Flagship</span>
+                                                {% endif %}
                                                 {% endif %}</h1>
                                             </div>
                                             <div class="description">

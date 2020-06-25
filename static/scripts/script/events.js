@@ -1,4 +1,3 @@
-document.getElementById("allButton").click();
 
 function eventType(evt, cityName) {
     var i, tabcontent, tablinks;
