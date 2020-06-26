@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.contrib.auth.models import  User,auth
 from .models import Events,EventRegistrations,EventRegistrationsHackathon,Campus,Message
 from datetime import datetime
+from tablib import Dataset
+from .resources import EventRegistrationsResource,EventRegistrationsHackathonResource
 
 # Create your views here.
 def index(request):
@@ -79,3 +81,13 @@ def about(request):
         message=request.POST["textarea"]
         var2=Message.objects.create(name=name,email=email,contact=contact,message=message)
     return render(request,'about.html')
+
+'''def importcsv(request):
+    file_format = "CSV"
+    EventRegistrations_resource = EventRegistrationsResource()
+    EventRegistrationsHackathon_resource=EventRegistrationsHackathonResource()
+    dataset = EventRegistrations_resource.export()
+    response = HttpResponse(dataset.csv, content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="exported_data.csv"'
+    return response   
+    return redirect("index")'''

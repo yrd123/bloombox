@@ -11,6 +11,7 @@ urlpatterns = [
     path('partners',views.partners,name="partners"),
     path('team',views.team,name="team"),
     path('about',views.about,name="about"),
+
 ]
 
 if settings.DEBUG:
