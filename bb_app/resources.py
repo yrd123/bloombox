@@ -1,4 +1,4 @@
-from import_export import resources
+'''from import_export import resources
 from .models import EventRegistrations,EventRegistrationsHackathon
 
 class EventRegistrationsResource(resources.ModelResource):
@@ -8,4 +8,4 @@ class EventRegistrationsResource(resources.ModelResource):
 class EventRegistrationsHackathonResource(resources.ModelResource):
     class Meta:
         model = EventRegistrationsHackathon
-    
+'''

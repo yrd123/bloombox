@@ -4,7 +4,7 @@ from django.contrib.auth.models import  User,auth
 from .models import Events,EventRegistrations,EventRegistrationsHackathon,Campus,Message
 from datetime import datetime
 from tablib import Dataset
-from .resources import EventRegistrationsResource,EventRegistrationsHackathonResource
+#from .resources import EventRegistrationsResource,EventRegistrationsHackathonResource
 
 # Create your views here.
 def index(request):
