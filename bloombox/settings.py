@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'import_export'
 ]
 
 MIDDLEWARE = [
@@ -132,4 +131,4 @@ MEDIA_URL='/media/'
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
 
-IMPORT_EXPORT_USE_TRANSACTIONS = True
+#IMPORT_EXPORT_USE_TRANSACTIONS = True
